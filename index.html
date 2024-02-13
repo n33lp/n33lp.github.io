@@ -150,9 +150,21 @@
                         <div class="gradient gradient-3"></div>
                 </div>
                 <div class = "content">
-                        <h1 style="text-align: center;">Website Under Construction</h1>
+
                         <img src="src/img/under-construction.gif" alt="Under Construction" style="display: block; margin: 0 auto;">
-                        <h1 style="text-align: center;">Check back soon!</h1>
+                        <h1 style="text-align: center;"><span id="element"></span></h1>
+                        
+                        <!-- https://github.com/mattboldt/typed.js/ -->
+                        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                        <script>
+                          var typed = new Typed('#element', {
+                            strings: ['Website Under Construction.', 'Check back soon!'],
+                            typeSpeed: 75,
+                            backSpeed: 50,
+                            loop: true
+                          });
+                        </script>
+                        
                 </div>
         </body>
 </html>
