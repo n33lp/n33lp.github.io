@@ -7,26 +7,24 @@
     <link rel="stylesheet" href="src/CSS/index.css">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-    </style>
 </head>
 <body>
 
 <!-- The navigation bar -->
 <div class="topnav" id="myTopnav">
-  <a class="active" >Home</a>
-  <a href="about.html" >About</a>
-  <a href="projects.html">Projects</a>
-  <a href="#resume.html">Resume</a>
+    <span>Neel</span>
+    <div>
+        <a class="nav-link active" href="#home" onclick="setActive(this)">Home</a>
+        <a class="nav-link" href="#about" onclick="setActive(this)">About</a>
+        <a class="nav-link" href="#projects" onclick="setActive(this)">Projects</a>
+        <a class="nav-link" href="#resume" onclick="setActive(this)">Resume</a>
+    </div>
     <a href="javascript:void(0);" class="icon" onclick="navFunc()">
         <i class="fa fa-bars"></i>
     </a>
 </div>
 
+<!-- Background animation -->
 <div>
 <!-- Content -->
 <div class="wrapper">
@@ -42,17 +40,18 @@
     <script src="src/JS/index.js"></script>
 </div>
 </div>
-<script>
-    // JavaScript function to toggle the navigation menu for smaller screens
-    function navFunc() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
-</script>
+
+<!-- Content -->
+<div class="content">
+    <div id="home"></div>
+    <div id="about"></div>
+    <div id="projects"></div>
+    <div id="resume"></div>
+</div>
+<!-- Footer -->
+<div class="footer">
+    <footer></footer>
+</div>
 
 </body>
 </html>

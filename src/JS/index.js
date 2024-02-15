@@ -6,11 +6,21 @@ var typed = new Typed('#element', {
 });
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function navFunc() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+    // JavaScript function to toggle the navigation menu for smaller screens
+    function navFunc() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+
+  // Function to set active class
+  function setActive(element) {
+      var links = document.querySelectorAll('.nav-link');
+      links.forEach(function(link) {
+          link.classList.remove('active');
+      });
+      element.classList.add('active');
   }
