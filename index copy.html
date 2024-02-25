@@ -27,16 +27,16 @@
 
 
 <div class="intro">
-    <div class = "containers" >
+    <div class = "containers">
         <div class="row">
             <div class="column">
-                <p style="font-size: 20px;">Hey!</p>
+                <p style="font-size: 30px;">Hey!</p>
                 <p>I am <span id="element"></span></p>
                 <!-- https://github.com/mattboldt/typed.js/ -->
                 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
                 <script src="src2/JS/index.js"></script>
-                <p style="font-size: 20px;">I aspire to be a specialist in building and <span style="color:dodgerblue">designing exceptional digital experiences.</span></p>
-                <button href="#about" style="font-size: 30px;">About me</button>
+                <p style="font-size: 30px;">I aspire to be a specialist in building and <span style="color:dodgerblue">designing exceptional digital experiences.</span></p>
+                
             </div>
             <div class="column">
                 <img src="src2/img/profile.jpg">
@@ -44,7 +44,37 @@
         </div>
     </div>
 </div>
+<a href="#about"><button style="font-size: 30px;">About me</button></a>
 
+<!-- <div class="particles">
+    <div class="count-particles">
+        <span class="js-count-particles"></span>
+      </div>
+      
+      <div id="particles-js" ></div>
+      <script src="src2/JS/particles.js"></script>
+      <script src="src2/JS/app.js"></script>
+      
+      <script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function() {
+          stats.begin();
+          stats.end();
+          if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+          }
+          requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+      </script>
+    </div> -->
 
 </body>
 </html>

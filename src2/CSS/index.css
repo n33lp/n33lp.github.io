@@ -8,7 +8,7 @@ body {
 }
 
 p {
-    font-size: 35px;
+    font-size: 60px;
     line-height: 1;
 
 }
@@ -73,9 +73,10 @@ button {
 
 
 .intro {
+    z-index: 1;
     /* background-color: #4CAF50; */
     margin: 0 auto;
-    height: 70vh;
+    height: 60vh;
     align-items: center;
     /* display: block; */
     display: flex;
@@ -103,6 +104,17 @@ button {
 .row{
     align-items: center;
     display: flex;
+}
+
+.particles {
+    position: absolute;
+    z-index: 0;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-85%);
+    width: 50%;
+    height: 40vh;
+    /* border: 3px solid #73AD21; */
 }
 /* .row {
     display: flex;
