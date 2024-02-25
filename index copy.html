@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neel's Site</title>
+    <link rel="stylesheet" href="src2/CSS/index.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+<div class="topnav" id="myTopnav" style="background-color: black;">
+    <span>Neel</span>
+    <div>
+        <a class="nav-link active" href="#home" onclick="setActive(this)">Home</a>
+        <a class="nav-link" href="#about" onclick="setActive(this)">About</a>
+        <a class="nav-link" href="#projects" onclick="setActive(this)">Projects</a>
+        <a class="nav-link" href="#resume" onclick="setActive(this)">Resume</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="navFunc()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+
+<div class="intro">
+    <div class = "containers" >
+        <div class="row">
+            <div class="column">
+                <p style="font-size: 20px;">Hey!</p>
+                <p>I am <span id="element"></span></p>
+                <!-- https://github.com/mattboldt/typed.js/ -->
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                <script src="src2/JS/index.js"></script>
+                <p style="font-size: 20px;">I aspire to be a specialist in building and <span style="color:dodgerblue">designing exceptional digital experiences.</span></p>
+                <button href="#about" style="font-size: 30px;">About me</button>
+            </div>
+            <div class="column">
+                <img src="src2/img/profile.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
