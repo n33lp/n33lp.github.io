@@ -1,5 +1,5 @@
 var typed = new Typed('#element', {
-    strings: ['Website Under Construction.', 'Check back soon!'],
+    strings: ['Neel.', 'a Software Developer.', 'a Web Developer.', 'a Programmer.', 'a Tech Enthusiast.'],
     typeSpeed: 75,
     backSpeed: 50,
     loop: true
