@@ -8,14 +8,12 @@ body {
 }
 
 p {
-    font-size: 60px;
-    line-height: 1;
+    font-size: 30px;
+    color: rgb(204, 209, 215);
+    /* line-height: 1; */
 
 }
 
-#element{
-    color: coral;
-}
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -83,6 +81,13 @@ button {
     padding-top: 2%;
 
 }
+
+.about {
+    text-align: left;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    line-height: 1.15;
+}
   
 .column {
     float: left;
@@ -92,7 +97,7 @@ button {
 .column img{
     border-radius: 50%;
     max-width: 80%;
-    float: right;
+    
 }
 
 .row:after {
