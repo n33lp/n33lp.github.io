@@ -25,3 +25,18 @@ var typed = new Typed('#element', {
       element.classList.add('active');
   }
 
+  function scrollToAbout() {
+    event.preventDefault(); // Prevent the default anchor behavior
+  
+    const section = document.getElementById("about");
+    const offset = 170; // Adjust this value based on your needs
+  
+    // Calculate the position you want to scroll to
+    const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset + offset;
+  
+    // Smoothly scroll to the adjusted position
+    window.scrollTo({
+      top: sectionPosition,
+      behavior: 'smooth'
+    });
+  }

@@ -16,7 +16,7 @@
     <span>Neel</span>
     <div>
         <a class="nav-link active" href="#home" onclick="setActive(this)">Home</a>
-        <a class="nav-link" href="#about" onclick="setActive(this)">About</a>
+        <a class="nav-link" href="" onclick="setActive(this);scrollToAbout()">About</a>
         <a class="nav-link" href="#projects" onclick="setActive(this)">Projects</a>
         <a class="nav-link" href="#resume" onclick="setActive(this)">Resume</a>
     </div>
@@ -45,8 +45,8 @@
     </div>
 </div>
 
-<a href="#about"><button style="font-size: 30px;">About me</button></a>
-<a href="#about"><img src="src/img/mouse.gif" alt="Descriptive Text" style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 100; max-width: 7%;"></a>
+<button onclick="scrollToAbout()" style="font-size: 30px;">About me</button>
+<img onclick="scrollToAbout()" src="src/img/mouse.gif" alt="Descriptive Text" style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 100; max-width: 7%;">
 
 <div class="particles">
     <div class="count-particles">
