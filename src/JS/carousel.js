@@ -1,54 +1,54 @@
 const projects = [
     { 
-        imageUrl: "src/img/healthcare.jpg",
+        imageUrl: "src/img/healthcare.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
         title: "StrokeDetector",
         description: "A IOS app and a backend API that detects strokes in real time.",
-        sourceCode: "https://github.com/n33lp/StrokeDetector"  //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
+        sourceCode: "https://github.com/n33lp/StrokeDetector"  
     },
     { 
-        imageUrl: "src/img/code2.jpg",
+        imageUrl: "src/img/code2.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
         title: "Who-Will",
         description: "A new social media platform, using React and Django.",
-        sourceCode: "https://github.com/n33lp/404f23project-who-will" //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
+        sourceCode: "https://github.com/n33lp/404f23project-who-will" 
     },
     { 
-        imageUrl: "src/img/trading.jpg",
+        imageUrl: "src/img/trading.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
         title: "TradingBot",
         description: "An automated (stock) trading system.",
-        sourceCode: "https://github.com/n33lp/tradingBot" //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
+        sourceCode: "https://github.com/n33lp/tradingBot" 
     },
     { 
-        imageUrl: "src/img/agriculture.jpg",
+        imageUrl: "src/img/agriculture.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
         title: "FungiLink",
         description: "A portal for farmers to see fungal spread in their farm.",
-        sourceCode: "https://github.com/n33lp/Farmers-Portal" //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
+        sourceCode: "https://github.com/n33lp/Farmers-Portal" 
     },
     { 
-        imageUrl: "src/img/code2.jpg",
+        imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
         title: "Personal Website",
         description: "This website, built using HTML, CSS, and JavaScript.",
-        sourceCode: "https://github.com/n33lp/n33lp.github.io"
+        sourceCode: "https://github.com/n33lp/n33lp.github.io" 
     },
     { 
-        imageUrl: "src/img/QR.jpg",
+        imageUrl: "src/img/QR.jpg", //https://qr.io/
         title: "CodeCatchers",
-        description: "An android QR code catching game.",
-        sourceCode: "https://github.com/n33lp/CodeCatchers"
+        description: "An android QR code catching game.",  
+        sourceCode: "https://github.com/n33lp/CodeCatchers"  
     },
     { 
-        imageUrl: "src/img/code2.jpg",
+        imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
         title: "AgriScan",
         description: "A drone programmed to fly autonomously, to detect Fungi.",
         sourceCode: ""
     },
     { 
-        imageUrl: "src/img/code2.jpg",
+        imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
         title: "Project 8",
         description: "Brief description of Project 8.",
         sourceCode: ""
     },
     { 
-        imageUrl: "src/img/code2.jpg",
+        imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
         title: "Project 9",
         description: "Brief description of Project 9.",
         sourceCode: ""
