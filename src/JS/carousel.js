@@ -26,7 +26,7 @@ const projects = [
     { 
         imageUrl: "src/img/code2.jpg",
         title: "Personal Website",
-        description: "This website, built using HTML, CSS, and JavaScript on GitHub.",
+        description: "This website, built using HTML, CSS, and JavaScript.",
         sourceCode: ""
     },
     { 
