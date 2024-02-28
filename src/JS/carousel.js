@@ -19,7 +19,7 @@ const projects = [
     },
     { 
         imageUrl: "src/img/agriculture.jpg",
-        title: "Farmers-Portal",
+        title: "FungiLink",
         description: "A portal for farmers to see fungal spread in their farm.",
         sourceCode: "https://github.com/n33lp/Farmers-Portal" //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
     },
@@ -30,14 +30,14 @@ const projects = [
         sourceCode: "https://github.com/n33lp/n33lp.github.io"
     },
     { 
-        imageUrl: "src/img/code2.jpg",
+        imageUrl: "src/img/QR.jpg",
         title: "CodeCatchers",
         description: "An android QR code catching game.",
         sourceCode: "https://github.com/n33lp/CodeCatchers"
     },
     { 
         imageUrl: "src/img/code2.jpg",
-        title: "Drone automation",
+        title: "AgriScan",
         description: "A drone programmed to fly autonomously, to detect Fungi.",
         sourceCode: ""
     },
