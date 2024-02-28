@@ -1,33 +1,33 @@
 const projects = [
     { 
-        imageUrl: "src/img/code2.jpg",
+        imageUrl: "src/img/healthcare.jpg",
         title: "StrokeDetector",
         description: "A IOS app and a backend API that detects strokes in real time.",
-        sourceCode: "https://github.com/n33lp/StrokeDetector"
+        sourceCode: "https://github.com/n33lp/StrokeDetector"  //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
     },
     { 
         imageUrl: "src/img/code2.jpg",
         title: "Who-Will",
         description: "A new social media platform, using React and Django.",
-        sourceCode: "https://github.com/n33lp/404f23project-who-will"
+        sourceCode: "https://github.com/n33lp/404f23project-who-will" //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
     },
     { 
-        imageUrl: "src/img/code2.jpg",
+        imageUrl: "src/img/trading.jpg",
         title: "TradingBot",
         description: "An automated (stock) trading system.",
-        sourceCode: "https://github.com/n33lp/tradingBot"
+        sourceCode: "https://github.com/n33lp/tradingBot" //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
     },
     { 
-        imageUrl: "src/img/code2.jpg",
+        imageUrl: "src/img/agriculture.jpg",
         title: "Farmers-Portal",
         description: "A portal for farmers to see fungal spread in their farm.",
-        sourceCode: "https://github.com/n33lp/Farmers-Portal"
+        sourceCode: "https://github.com/n33lp/Farmers-Portal" //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
     },
     { 
         imageUrl: "src/img/code2.jpg",
         title: "Personal Website",
         description: "This website, built using HTML, CSS, and JavaScript.",
-        sourceCode: ""
+        sourceCode: "https://github.com/n33lp/n33lp.github.io"
     },
     { 
         imageUrl: "src/img/code2.jpg",
@@ -37,8 +37,8 @@ const projects = [
     },
     { 
         imageUrl: "src/img/code2.jpg",
-        title: "Project 7",
-        description: "Brief description of Project 7.",
+        title: "Drone automation",
+        description: "A drone programmed to fly autonomously, to detect Fungi.",
         sourceCode: ""
     },
     { 
@@ -81,17 +81,22 @@ function generateSlides() {
         description.textContent = project.description;
         description.style.fontSize = "20px";
 
-        const sourceCode = document.createElement('button');
-        sourceCode.textContent = " <code />";
-        sourceCode.style.backgroundColor = "dodgerblue";
-        sourceCode.style.color = "black";
+        const sourceCodeBtn = document.createElement('button');
+        sourceCodeBtn.textContent = " <code />";
+        sourceCodeBtn.style.backgroundColor = "dodgerblue";
+        sourceCodeBtn.style.color = "black";
         // border-radius: 40px;
-        sourceCode.style.borderRadius = "10px";
+        sourceCodeBtn.style.borderRadius = "10px";
+
+        const sourceCodeLk = document.createElement('a');
+        sourceCodeLk.href = project.sourceCode;
+        sourceCodeLk.target = "_blank";
 
         card.appendChild(image);
         card.appendChild(title);
         card.appendChild(description);
-        card.appendChild(sourceCode);
+        sourceCodeLk.appendChild(sourceCodeBtn);
+        card.appendChild(sourceCodeLk);
         slide.appendChild(card);
         slidesContainer.appendChild(slide);
     });
