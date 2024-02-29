@@ -6,7 +6,7 @@ const projects = [
         sourceCode: "https://github.com/n33lp/StrokeDetector"  
     },
     { 
-        imageUrl: "src/img/code2.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
+        imageUrl: "src/img/web.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
         title: "Who-Will",
         description: "A new social media platform, using React and Django.",
         sourceCode: "https://github.com/n33lp/404f23project-who-will" 
@@ -24,7 +24,7 @@ const projects = [
         sourceCode: "https://github.com/n33lp/Farmers-Portal" 
     },
     { 
-        imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
+        imageUrl: "src/img/web.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
         title: "Personal Website",
         description: "This website, built using HTML, CSS, and JavaScript.",
         sourceCode: "https://github.com/n33lp/n33lp.github.io" 
@@ -36,7 +36,7 @@ const projects = [
         sourceCode: "https://github.com/n33lp/CodeCatchers"  
     },
     { 
-        imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
+        imageUrl: "src/img/drone.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
         title: "AgriScan",
         description: "A drone programmed to fly autonomously, to detect Fungi.",
         sourceCode: ""
