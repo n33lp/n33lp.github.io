@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neel's Site</title>
     <link rel="stylesheet" href="src/CSS/index.css">
+    <link rel="stylesheet" href="src/CSS/progress-bars.css">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
 </head>
 <body>
 
@@ -113,14 +115,105 @@
 </div>
 
 <div class="journey" id="journey">
-
 </div>
 
 <div class="skills" id="skills">
+    <h1 style="text-align:center;">MY SKILLS</h1>
+    <!-- Frontend Developer Section -->
+    <div class="category">
+        <details class="dropdown">
+            <summary>
+                <div class="summary-content">
+                    <div class="left-content">
+                        <p>
+                            <i class="icon fas fa-code"></i>
+                            <span style="color: dodgerblue;">Frontend Developer</span>
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-down summary-chevron"></i>
+                </div>
+            </summary>
+            <div class="dropdown-details">
+                <div class="frontend-skills">
+                    <!-- progress.js will populate -->
+                </div>
+            </div>
+        </details>
+    </div>
+       
+    <!-- Backend Developer Section -->
+    <div class="category">
+        <details class="dropdown">
+            <summary>
+                <div class="summary-content">
+                    <div class="left-content">
+                        <p>
+                            <i class="icon fas fa-server"></i>
+                            <span style="color: dodgerblue;">Backend Developer</span>
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-down summary-chevron"></i>
+                </div>
+            </summary>
+            <div class="dropdown-details">
+                <div class="backend-skills">
+                    <!-- progress.js will populate -->
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <!-- Mobile Developer Section -->
+    <div class="category">
+        <details class="dropdown">
+            <summary>
+                <div class="summary-content">
+                    <div class="left-content">
+                        <p>
+                            <i class="icon fas fa-mobile-alt"></i>
+                            <span style="color: dodgerblue;">Mobile Developer</span>
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-down summary-chevron"></i>
+                </div>
+            </summary>
+            <div class="dropdown-details">
+                <div class="mobile-skills">
+                    <!-- progress.js will populate -->
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <!-- Backend Developer Section -->
+    <div class="category">
+        <details class="dropdown">
+            <summary>
+                <div class="summary-content">
+                    <div class="left-content">
+                        <p>
+                            <i class="icon fas fa-chart-bar"></i>
+                            <span style="color: dodgerblue;">Data Analysis</span>
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-down summary-chevron"></i>
+                </div>
+            </summary>
+            <div class="dropdown-details">
+                <div class="data-skill">
+                    <!-- progress.js will populate -->
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <script src="src/JS/progress.js"></script>
+
 </div>
 
 
 <div class="projects" id="projects">
+    <h1 style="text-align:center;">MY PROJECTS</h1>
     <link rel="stylesheet" href="src/CSS/carousel.css">
     <div class="carousel">
         <div class="slides"></div>
@@ -130,6 +223,8 @@
     <script src="src/JS/carousel.js"></script>
 </div>
 
+<div class="footer" id="footer">
+</div>
 
 
 </body>

@@ -1,5 +1,5 @@
 body {
-    color: #fff;
+    color: rgb(204, 209, 215);
     background-color: #000;
     padding: 0; 
     width: 70%;
@@ -9,7 +9,6 @@ body {
 
 p {
     font-size: 30px;
-    color: rgb(204, 209, 215);
     /* line-height: 1; */
 
 }
