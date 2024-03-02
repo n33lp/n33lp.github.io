@@ -43,14 +43,14 @@ const projects = [
     },
     { 
         imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
-        title: "Project 8",
-        description: "Brief description of Project 8.",
+        title: "Coming Soon",
+        description: "Stay tooned.",
         sourceCode: ""
     },
     { 
         imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
-        title: "Project 9",
-        description: "Brief description of Project 9.",
+        title: "Coming Soon",
+        description: "Stay tooned.",
         sourceCode: ""
     },
 ];
