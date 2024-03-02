@@ -25,18 +25,108 @@ var typed = new Typed('#element', {
       element.classList.add('active');
   }
 
-  function scrollToAbout() {
+  function scrollToAbout() {  
     event.preventDefault(); // Prevent the default anchor behavior
-  
+    
     const section = document.getElementById("about");
-    const offset = 170; // Adjust this value based on your needs
-  
+    
     // Calculate the position you want to scroll to
-    const sectionPosition = section.getBoundingClientRect().top + window.pageYOffset + offset;
-  
+    const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const sectionHeight = section.clientHeight;
+    const middleOfWindow = windowHeight / 2;
+    
+    // Adjust the position to center the section vertically
+    const scrollToPosition = sectionTop - (middleOfWindow - (sectionHeight / 2));
+    
     // Smoothly scroll to the adjusted position
     window.scrollTo({
-      top: sectionPosition,
+      top: scrollToPosition,
+      behavior: 'smooth'
+    });
+  }
+
+  function scrollToJourney() {
+    event.preventDefault(); // Prevent the default anchor behavior
+    
+    const section = document.getElementById("journey");
+    
+    // Calculate the position you want to scroll to
+    const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const sectionHeight = section.clientHeight;
+    const middleOfWindow = windowHeight / 2;
+    
+    // Adjust the position to center the section vertically
+    const scrollToPosition = sectionTop - (middleOfWindow - (sectionHeight / 2));
+    
+    // Smoothly scroll to the adjusted position
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth'
+    });
+  }
+
+  function scrollToSkills() {
+    event.preventDefault(); // Prevent the default anchor behavior
+    
+    const section = document.getElementById("skills");
+    
+    // Calculate the position you want to scroll to
+    const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const sectionHeight = section.clientHeight;
+    const middleOfWindow = windowHeight / 2;
+    
+    // Adjust the position to center the section vertically
+    const scrollToPosition = sectionTop - (middleOfWindow - (sectionHeight / 2));
+    
+    // Smoothly scroll to the adjusted position
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth'
+    });
+  }
+
+
+  function scrollToProjects() {
+    event.preventDefault(); // Prevent the default anchor behavior
+    
+    const section = document.getElementById("projects");
+    
+    // Calculate the position you want to scroll to
+    const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const sectionHeight = section.clientHeight;
+    const middleOfWindow = windowHeight / 2;
+    
+    // Adjust the position to center the section vertically
+    const scrollToPosition = sectionTop - (middleOfWindow - (sectionHeight / 2));
+    
+    // Smoothly scroll to the adjusted position
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth'
+    });
+  }
+
+  function scrollToHome() {
+    event.preventDefault(); // Prevent the default anchor behavior
+    
+    const section = document.getElementById("intro");
+    
+    // Calculate the position you want to scroll to
+    const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const sectionHeight = section.clientHeight;
+    const middleOfWindow = windowHeight / 2;
+    
+    // Adjust the position to center the section vertically
+    const scrollToPosition = sectionTop - (middleOfWindow - (sectionHeight / 2));
+    
+    // Smoothly scroll to the adjusted position
+    window.scrollTo({
+      top: scrollToPosition,
       behavior: 'smooth'
     });
   }
