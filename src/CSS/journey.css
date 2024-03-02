@@ -1,0 +1,67 @@
+.timeline-container {
+    position: relative;
+    max-width: 900px;
+    margin: 30px auto;
+  }
+  
+  .timeline-block {
+    display: flex;
+    justify-content: flex-end; /* Align blocks to the right */
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .experience,
+  .education {
+    flex: 1;
+  }
+
+  .edAlign{
+    text-align: right;
+  }
+
+  .exAlign{
+    text-align: left;
+  }
+  
+  .timeline-content {
+    /* padding: 20px; */
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    width: 40%;
+  }
+  
+  .education .timeline-content {
+    align-self: flex-start;
+    margin-right: 55%; /* Push the block to the left side */
+  }
+  
+  .experience .timeline-content {
+      align-self: flex-start;
+      margin-right: 5%;
+    }
+  
+  .timeline-container:before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #6c757d;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
+  .marker {
+      height: 20px;
+      width: 20px;
+      background-color: coral;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%; /* Align the top edge of the marker to the vertical center */
+      left: 50%;
+      transform: translate(-50%, -50%); /* Center the marker horizontally and vertically */
+      /* border: 3px solid #fff; */
+    }

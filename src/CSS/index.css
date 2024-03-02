@@ -13,7 +13,14 @@ p {
 
 }
 
+.footer p {
+    font-size: 15px;
+}
+.footer{
+    padding-top: 50px;
+    text-align: center;
 
+}
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
