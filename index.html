@@ -55,13 +55,13 @@
 <div class="particles">
     <div class="count-particles">
         <span class="js-count-particles"></span>
-      </div>
+    </div>
       
-      <div id="particles-js" ></div>
-      <script src="src/JS/particles.js"></script>
-      <script src="src/JS/app.js"></script>
+    <div id="particles-js" ></div>
+    <script src="src/JS/particles.js"></script>
+    <script src="src/JS/app.js"></script>
       
-      <script>
+    <script>
         var count_particles, stats, update;
         stats = new Stats;
         stats.setMode(0);
@@ -71,48 +71,31 @@
         document.body.appendChild(stats.domElement);
         count_particles = document.querySelector('.js-count-particles');
         update = function() {
-          stats.begin();
-          stats.end();
-          if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-          }
-          requestAnimationFrame(update);
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+        requestAnimationFrame(update);
         };
         requestAnimationFrame(update);
-      </script>
+    </script>
 </div>
 
 <div class="about" id="about">
-        <!-- <p>UNDER CONSTRUCTION</p>
-        <div style="width: 20%; margin-left: auto; margin-right: auto;"><img src="src/img/under-construction.gif"></div>
-        <p style="font-size: 30px;">I am a Computer Science student at the University of Waterloo. I am passionate about building and designing exceptional digital experiences. I am always looking for new opportunities to learn and grow. I am a quick learner and I am always eager to learn new technologies. I am a team player and I am always looking for opportunities to work with others. I am always looking for new opportunities to learn and grow. I am a quick learner and I am always eager to learn new technologies. I am a team player and I am always looking for opportunities to work with others.</p> -->
-        <!-- <p>CHECK BACK SOON!</p> -->
-
-        <div class = "containers">
-            <div class="row">
-                <div class="column">
-                    <img src="src/img/about.jpg">
-                </div>
-                <div class="column">
-                    <!-- <p>I am a Computer Science student at the University of Alberta. I am passionate about building and designing exceptional digital experiences. I am always looking for new opportunities to learn and grow. I am a quick learner and I am always eager to learn new technologies. I am a team player and I am always looking for opportunities to work with others.</p> -->
-
-
-                    <p>Hey, I'm Neel. I'm nearing the end of my journey at the <span style="color: rgb(97, 168, 107);">University of Alberta</span>, soon to complete a BSc with a double major in <span style="color:dodgerblue">Computer Science</span> and <span style="color:dodgerblue">Biological Science</span> — a weird but fascinating combination, right?</p>
-
-                    <p>My passions have led me to explore diverse worlds, from <span style="color: coral;">lab work</span> to <span style="color: coral;">research</span> to <span style="color: coral;">software development</span>.</p>
-
-                    <p>As I approach the conclusion of my degree, my sights are set on a career in <span style="color: coral;">software development</span>. I am passionate about up and coming technologies and am always looking for new opportunities to learn and grow.</p>
-
-                    <p>If you think I am a good fit for your team please feel free to email me at <a href="mailto: neel.patel0126@gmail.com" style="color:dodgerblue;text-decoration:none">neel.patel0126@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/n33lp/" target="_blank" style="color:dodgerblue; text-decoration:none">LinkedIn</a>.</p>
-
-                    <!-- I am always looking for new opportunities to learn and grow. I am a quick learner and I am always eager to learn new technologies. I am a team player and I am always looking for opportunities to work with others.  -->
-
-
-
-                </div>
-
+    <div class = "containers">
+        <div class="row">
+            <div class="column">
+                <img src="src/img/about.jpg">
+            </div>
+            <div class="column">
+                <p>Hey, I'm Neel. I'm nearing the end of my journey at the <span style="color: rgb(97, 168, 107);">University of Alberta</span>, soon to complete a BSc with a double major in <span style="color:dodgerblue">Computer Science</span> and <span style="color:dodgerblue">Biological Science</span> — a weird but fascinating combination, right?</p>
+                <p>My passions have led me to explore diverse worlds, from <span style="color: coral;">lab work</span> to <span style="color: coral;">research</span> to <span style="color: coral;">software development</span>.</p>
+                <p>As I approach the conclusion of my degree, my sights are set on a career in <span style="color: coral;">software development</span>. I am passionate about up and coming technologies and am always looking for new opportunities to learn and grow.</p>
+                <p>If you think I am a good fit for your team please feel free to email me at <a href="mailto: neel.patel0126@gmail.com" style="color:dodgerblue;text-decoration:none">neel.patel0126@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/n33lp/" target="_blank" style="color:dodgerblue; text-decoration:none">LinkedIn</a>.</p>
             </div>
         </div>
+    </div>
 </div>
 
 <div class="skills" id="skills">
@@ -206,87 +189,84 @@
     </div>
 
     <script src="src/JS/progress.js"></script>
-
 </div>
 
 <div class="journey" id="journey">
     <link rel="stylesheet" href="src/CSS/journey.css">
     <h1 style="text-align:center; padding-top: 15%;">MY JOURNEY</h1>
     <div class="timeline-container">
-
         <div class="timeline-block education">
-          <div class="timeline-content edAlign">
-            <p>Bachelor of Science</p>
-            <h6>University of Alberta</h6>
-            <h6>2019 - 2024</h6>
-          </div>
-          <div class="marker"></div>
+            <div class="timeline-content edAlign">
+                <p>Bachelor of Science</p>
+                <h6>University of Alberta</h6>
+                <h6>2019 - 2024</h6>
+            </div>
+            <div class="marker"></div>
         </div>
       
         <div class="timeline-block experience">
-          <div class="timeline-content">
-            <p>Lab Assistant I</p>
-            <h6>Dynalife</h6>
-            <h6>Dec. 2020 - Aug. 2022</h6>
-          </div>
-          <div class="marker"></div>
+            <div class="timeline-content">
+                <p>Lab Assistant I</p>
+                <h6>Dynalife</h6>
+                <h6>Dec. 2020 - Aug. 2022</h6>
+            </div>
+            <div class="marker"></div>
         </div>
       
         <div class="timeline-block education">
-          <div class="timeline-content edAlign">
-            <p>Data Analytics Professional Certificate</p>
-            <h6>Google, Coursera</h6>
-            <h6>Jun. 2022</h6>
-          </div>
-          <div class="marker"></div>
+            <div class="timeline-content edAlign">
+                <p>Data Analytics Professional Certificate</p>
+                <h6>Google, Coursera</h6>
+                <h6>Jun. 2022</h6>
+            </div>
+            <div class="marker"></div>
         </div>
 
         <div class="timeline-block education">
             <div class="timeline-content edAlign">
-              <p>Project Management Professional Certificate</p>
-              <h6>Google, Coursera</h6>
-              <h6>Jan. 2023</h6>
+                <p>Project Management Professional Certificate</p>
+                <h6>Google, Coursera</h6>
+                <h6>Jan. 2023</h6>
             </div>
             <div class="marker"></div>
         </div>
       
         <div class="timeline-block experience">
             <div class="timeline-content exAlign">
-              <p>Director of Technology</p>
-              <h6>UAlberta iGEM</h6>
-              <h6>Jan. 2023 - Nov. 2023</h6>
+                <p>Director of Technology</p>
+                <h6>UAlberta iGEM</h6>
+                <h6>Jan. 2023 - Nov. 2023</h6>
             </div>
             <div class="marker"></div>
         </div>
 
         <div class="timeline-block experience">
             <div class="timeline-content exAlign">
-              <p>Research Student</p>
-              <h6>University of Alberta</h6>
-              <h6>May. 2023 - Aug. 2023</h6>
+                <p>Research Student</p>
+                <h6>University of Alberta</h6>
+                <h6>May. 2023 - Aug. 2023</h6>
             </div>
             <div class="marker"></div>
         </div>
 
         <div class="timeline-block experience">
             <div class="timeline-content exAlign">
-              <p>AI Software Developer</p>
-              <h6>University of Alberta</h6>
-              <h6>Jul. 2023 - Oct. 2023</h6>
+                <p>AI Software Developer</p>
+                <h6>University of Alberta</h6>
+                <h6>Jul. 2023 - Oct. 2023</h6>
             </div>
             <div class="marker"></div>
         </div>
 
         <div class="timeline-block experience">
             <div class="timeline-content exAlign">
-              <p>Full Stack Developer</p>
-              <h6>Imagine Cities</h6>
-              <h6>Sept. 2023 - Present</h6>
+                <p>Full Stack Developer</p>
+                <h6>Imagine Cities</h6>
+                <h6>Sept. 2023 - Present</h6>
             </div>
             <div class="marker"></div>
         </div>
 
-      
       </div>
 </div>
 
