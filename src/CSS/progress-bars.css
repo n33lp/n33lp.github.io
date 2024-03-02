@@ -94,3 +94,10 @@
   details[open] .summary-chevron {
     transform: rotate(180deg);
   }
+
+  .bar-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em; /* Optional: adds some space between the bar info and the progress bar */
+}

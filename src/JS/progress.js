@@ -91,21 +91,30 @@ function frontendSkills() {
         const progressBarCon = document.createElement('div');
         progressBarCon.classList.add('progress-bar-container');
 
-        const skillName = document.createElement('div');
+        const skillName = document.createElement('span');
         skillName.classList.add('skill-name');
         skillName.textContent = skill.name;
+
+        const skillStat = document.createElement('span');
+        skillStat.classList.add('skill-stat');
+        skillStat.textContent = skill.stat;
 
         const skillDiv = document.createElement('div');
         skillDiv.classList.add('skill');
 
+        const barInfo = document.createElement('div');
+        barInfo.classList.add('bar-info'); // Use this class to apply Flexbox
+
+        barInfo.appendChild(skillName);
+        barInfo.appendChild(skillStat); // Append the percentage span
+        skillDiv.appendChild(barInfo); // Append the barInfo div
+        
         progressBarCon.appendChild(progressBar);
-        skillDiv.appendChild(skillName);
         skillDiv.appendChild(progressBarCon);
 
         skillsContainer.appendChild(skillDiv); // Append each skill to the container
     });
-
-};
+}
 
 function backendSkills() {
     const skillsContainer = document.querySelector('.backend-skills');
@@ -118,20 +127,29 @@ function backendSkills() {
         const progressBarCon = document.createElement('div');
         progressBarCon.classList.add('progress-bar-container');
 
-        const skillName = document.createElement('div');
+        const skillName = document.createElement('span');
         skillName.classList.add('skill-name');
         skillName.textContent = skill.name;
+
+        const skillStat = document.createElement('span');
+        skillStat.classList.add('skill-stat');
+        skillStat.textContent = skill.stat;
 
         const skillDiv = document.createElement('div');
         skillDiv.classList.add('skill');
 
+        const barInfo = document.createElement('div');
+        barInfo.classList.add('bar-info'); // Use this class to apply Flexbox
+
+        barInfo.appendChild(skillName);
+        barInfo.appendChild(skillStat); // Append the percentage span
+        skillDiv.appendChild(barInfo); // Append the barInfo div
+        
         progressBarCon.appendChild(progressBar);
-        skillDiv.appendChild(skillName);
         skillDiv.appendChild(progressBarCon);
 
         skillsContainer.appendChild(skillDiv); // Append each skill to the container
     });
-
 };
 
 function mobileSkills() {
@@ -145,24 +163,33 @@ function mobileSkills() {
         const progressBarCon = document.createElement('div');
         progressBarCon.classList.add('progress-bar-container');
 
-        const skillName = document.createElement('div');
+        const skillName = document.createElement('span');
         skillName.classList.add('skill-name');
         skillName.textContent = skill.name;
+
+        const skillStat = document.createElement('span');
+        skillStat.classList.add('skill-stat');
+        skillStat.textContent = skill.stat;
 
         const skillDiv = document.createElement('div');
         skillDiv.classList.add('skill');
 
+        const barInfo = document.createElement('div');
+        barInfo.classList.add('bar-info'); // Use this class to apply Flexbox
+
+        barInfo.appendChild(skillName);
+        barInfo.appendChild(skillStat); // Append the percentage span
+        skillDiv.appendChild(barInfo); // Append the barInfo div
+        
         progressBarCon.appendChild(progressBar);
-        skillDiv.appendChild(skillName);
         skillDiv.appendChild(progressBarCon);
 
         skillsContainer.appendChild(skillDiv); // Append each skill to the container
     });
-
 };
 
 function dataSkills() {
-    const skillsContainer = document.querySelector('.data-skill');
+    const skillsContainer = document.querySelector('.data-skills');
 
     data_skills.forEach(skill => {
         const progressBar = document.createElement('div');
@@ -172,21 +199,32 @@ function dataSkills() {
         const progressBarCon = document.createElement('div');
         progressBarCon.classList.add('progress-bar-container');
 
-        const skillName = document.createElement('div');
+        const skillName = document.createElement('span');
         skillName.classList.add('skill-name');
         skillName.textContent = skill.name;
+
+        const skillStat = document.createElement('span');
+        skillStat.classList.add('skill-stat');
+        skillStat.textContent = skill.stat;
 
         const skillDiv = document.createElement('div');
         skillDiv.classList.add('skill');
 
+        const barInfo = document.createElement('div');
+        barInfo.classList.add('bar-info'); // Use this class to apply Flexbox
+
+        barInfo.appendChild(skillName);
+        barInfo.appendChild(skillStat); // Append the percentage span
+        skillDiv.appendChild(barInfo); // Append the barInfo div
+        
         progressBarCon.appendChild(progressBar);
-        skillDiv.appendChild(skillName);
         skillDiv.appendChild(progressBarCon);
 
         skillsContainer.appendChild(skillDiv); // Append each skill to the container
     });
-
 };
+
+
 
 // Calls
 frontendSkills();
