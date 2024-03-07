@@ -39,7 +39,7 @@ const projects = [
         imageUrl: "src/img/drone.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
         title: "AgriScan",
         description: "A drone programmed to fly autonomously, to detect Fungi.",
-        sourceCode: ""
+        sourceCode: "https://github.com/n33lp/AgriScan"
     },
     { 
         imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
