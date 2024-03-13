@@ -164,7 +164,7 @@ button {
 }
 
 /* Media query for mobile devices */
-@media (max-width: 480px) {
+@media (width <=  480px) {
     body {
         width: 100%; /* Full width on very small devices */
     }
