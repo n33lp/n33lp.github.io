@@ -141,26 +141,73 @@ button {
     background-color: aquamarine;
   } */
 /* Media query for tablets */
-@media (max-width: 768px) {
-    body {
-        width: 90%; /* Increase width for smaller devices */
+@media (width <= 768px) {
+    /* body {
+        width: 90%;
     }
 
     .topnav {
-        font-size: 18px; /* Decrease font size for smaller devices */
+        font-size: 18px; 
     }
 
     .column {
-        width: 100%; /* Stack the columns on smaller screens */
+        width: 100%;
     }
 
     .particles {
-        width: 80%; /* Increase particle effect width */
+        width: 80%; 
         left: 50%;
-        transform: translateX(-50%); /* Center the element */
+        transform: translateX(-50%); 
+    } */
+    body {
+        width: 100%; /* Full width on very small devices */
+    }
+    p {
+        font-size: 12px;
+        /* line-height: 1; */
+    
+    }
+    #autoType {
+        font-size: 27px
+    }
+
+    .topnav {
+        font-size: 13px; /* Further decrease font size for mobile */
+    }
+
+    .topnav a {
+        padding: 10px 8px; /* Adjust padding for smaller screens */
+    }
+
+    .footer p {
+        font-size: 8px; /* Decrease footer font size */
+    }
+
+    .intro {
+        padding-top: 10%; /* Increase padding at the top */
+        height: 50vh; /* Adjust height for mobile view */
     }
     
-    /* Add other responsive adjustments as needed */
+    /* Adjust image size for mobile */
+    .column img {
+        max-width: 90%;
+    }
+    .particles {
+        /* background-color: aqua; */
+        /* position: absolute; */
+        /* z-index: 0; */
+        /* top: 20%; */
+        /* left: 50%; */
+        /* transform: translateX(-95%); */
+        /* width: 50%; */
+        /* height: 40vh; */
+        /* border: 3px solid #73AD21; */
+        display: none;
+    }
+    #aboutButton{
+        font-size: 12px;
+    }
+    
 }
 
 /* Media query for mobile devices */
