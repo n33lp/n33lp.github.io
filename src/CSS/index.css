@@ -13,6 +13,10 @@ p {
 
 }
 
+#autoType {
+    font-size: 60px
+}
+
 .footer p {
     font-size: 15px;
 }
@@ -74,6 +78,9 @@ button {
     border-radius: 40px;
 }
 
+#aboutButton{
+    font-size: 30px;
+}
 
 
 .intro {
@@ -133,3 +140,79 @@ button {
     justify-content: space-between; 
     background-color: aquamarine;
   } */
+/* Media query for tablets */
+@media (max-width: 768px) {
+    body {
+        width: 90%; /* Increase width for smaller devices */
+    }
+
+    .topnav {
+        font-size: 18px; /* Decrease font size for smaller devices */
+    }
+
+    .column {
+        width: 100%; /* Stack the columns on smaller screens */
+    }
+
+    .particles {
+        width: 80%; /* Increase particle effect width */
+        left: 50%;
+        transform: translateX(-50%); /* Center the element */
+    }
+    
+    /* Add other responsive adjustments as needed */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    body {
+        width: 100%; /* Full width on very small devices */
+    }
+    p {
+        font-size: 12px;
+        /* line-height: 1; */
+    
+    }
+    #autoType {
+        font-size: 27px
+    }
+
+    .topnav {
+        font-size: 13px; /* Further decrease font size for mobile */
+    }
+
+    .topnav a {
+        padding: 10px 8px; /* Adjust padding for smaller screens */
+    }
+
+    .footer p {
+        font-size: 8px; /* Decrease footer font size */
+    }
+
+    .intro {
+        padding-top: 10%; /* Increase padding at the top */
+        height: 50vh; /* Adjust height for mobile view */
+    }
+    
+    /* Adjust image size for mobile */
+    .column img {
+        max-width: 90%;
+    }
+    .particles {
+        /* background-color: aqua; */
+        /* position: absolute; */
+        /* z-index: 0; */
+        /* top: 20%; */
+        /* left: 50%; */
+        /* transform: translateX(-95%); */
+        /* width: 50%; */
+        /* height: 40vh; */
+        /* border: 3px solid #73AD21; */
+        display: none;
+    }
+    #aboutButton{
+        font-size: 12px;
+    }
+    
+    /* Add other responsive adjustments as needed */
+}
