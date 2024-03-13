@@ -73,20 +73,15 @@ function generateSlides() {
 
         const title = document.createElement('h3');
         title.textContent = project.title;
-        title.style.color = "dodgerblue";
-        // font-size:
-        title.style.fontSize = "30px";
+        title.id = "carouselTitle";
 
         const description = document.createElement('p');
         description.textContent = project.description;
-        description.style.fontSize = "20px";
+        description.id = "carouselDescription";
 
         const sourceCodeBtn = document.createElement('button');
-        sourceCodeBtn.textContent = " <code />";
-        sourceCodeBtn.style.backgroundColor = "dodgerblue";
-        sourceCodeBtn.style.color = "black";
-        // border-radius: 40px;
-        sourceCodeBtn.style.borderRadius = "10px";
+        sourceCodeBtn.textContent = " <code/>";
+        sourceCodeBtn.id = "carouselButton";
 
         const sourceCodeLk = document.createElement('a');
         sourceCodeLk.href = project.sourceCode;
