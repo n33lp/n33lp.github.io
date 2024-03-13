@@ -160,7 +160,7 @@ button {
         transform: translateX(-50%); 
     } */
     body {
-        width: 90%; /* Full width on very small devices */
+        width: 100%; /* Full width on very small devices */
     }
     p {
         font-size: 12px;
@@ -213,7 +213,7 @@ button {
 /* Media query for mobile devices */
 @media (width <=  480px) {
     body {
-        width: 90%;
+        width: 100%; /* Full width on very small devices */
     }
     p {
         font-size: 12px;
