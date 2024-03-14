@@ -9,7 +9,7 @@ const projects = [
         imageUrl: "src/img/web.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
         title: "Who-Will",
         description: "A new social media platform, using React and Django.",
-        sourceCode: "https://github.com/n33lp/404f23project-who-will" 
+        sourceCode: "https://github.com/n33lp/whoWill" 
     },
     { 
         imageUrl: "src/img/trading.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
