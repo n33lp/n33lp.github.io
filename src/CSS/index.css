@@ -141,7 +141,7 @@ button {
     background-color: aquamarine;
   } */
 /* Media query for tablets */
-@media (width <= 768px) {
+@media (width <= 800px) {
     /* body {
         width: 90%;
     }
