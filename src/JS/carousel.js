@@ -102,7 +102,7 @@ function generateSlides() {
 
 // Initial function call to generate slides
 generateSlides();
-let slideWidth = document.querySelector('.slide').offsetWidth; // Width of each slide in percentage
+let slideWidth; // Width of each slide in percentage
 
 
 // Navigation functions
