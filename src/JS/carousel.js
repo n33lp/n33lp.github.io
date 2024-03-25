@@ -102,7 +102,7 @@ function generateSlides() {
 
 // Initial function call to generate slides
 generateSlides();
-const slideWidth = document.querySelector('.slide').offsetWidth; // Width of each slide in percentage
+let slideWidth = document.querySelector('.slide').offsetWidth; // Width of each slide in percentage
 
 
 // Navigation functions
@@ -110,10 +110,9 @@ const totalSlides = projects.length;
 let currentSlide = 1;
 
 function showSlide() {
-    console.log('showSlide() called');
+    slideWidth = document.querySelector('.slide').offsetWidth; // Width of each slide in percentage
     let moveTo = currentSlide - 1;
     let totalOffset = moveTo * slideWidth * -1;
-    console.log("totalOffset:"+totalOffset);
     document.querySelector('.slides').style.transform = `translateX(${totalOffset}px)`;
 }
 
