@@ -36,16 +36,16 @@ const projects = [
         sourceCode: "https://github.com/n33lp/CodeCatchers"  
     },
     { 
-        imageUrl: "src/img/drone.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
+        imageUrl: "src/img/drone.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
         title: "AgriScan",
         description: "A drone programmed to fly autonomously, to detect Fungi.",
         sourceCode: "https://github.com/n33lp/AgriScan"
     },
     { 
-        imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
-        title: "Coming Soon",
-        description: "Stay tooned.",
-        sourceCode: ""
+        imageUrl: "src/img/github.jpg", //https://www.shecodes.io/challenge_submissions/920109/embed
+        title: "GitHubScraper",
+        description: "A scraper to get Github stats.",
+        sourceCode: "https://github.com/n33lp/GitHubScraper"
     },
     { 
         imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
