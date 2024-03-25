@@ -120,7 +120,6 @@ function showSlide() {
 function prevSlide() {
     if (currentSlide - 3 > 0){
         currentSlide = currentSlide - 3;
-        console.log(currentSlide);
         showSlide();
     }
 }
@@ -128,7 +127,6 @@ function prevSlide() {
 function nextSlide() {
     if (currentSlide + 3 < totalSlides) {
         currentSlide = currentSlide + 3;
-        console.log(currentSlide);
         showSlide(); 
     }
 }
