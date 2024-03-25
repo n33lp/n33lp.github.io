@@ -102,38 +102,33 @@ function generateSlides() {
 
 // Initial function call to generate slides
 generateSlides();
+const slideWidth = document.querySelector('.slide').offsetWidth; // Width of each slide in percentage
+
 
 // Navigation functions
 const totalSlides = projects.length;
-let currentSlide = 0;
+let currentSlide = 1;
 
-// function showSlide(slideIndex) {
-//     currentSlide = slideIndex;
-//     const offset = (-100 * currentSlide * 0.33); // Adjust offset for displaying three cards per slide
-//     document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
-// }
-
-function showSlide(slideIndex) {
-    currentSlide = slideIndex;
-    const offsetPercentage = (-100 * currentSlide * 0.33); // Adjust offset for displaying three cards per slide
-    const offsetPixels = -10*slideIndex; // Additional pixels to move to the right
-    const totalOffset = `calc(${offsetPercentage}% + ${offsetPixels}px)`;
-
-    document.querySelector('.slides').style.transform = `translateX(${totalOffset})`;
+function showSlide() {
+    console.log('showSlide() called');
+    let moveTo = currentSlide - 1;
+    let totalOffset = moveTo * slideWidth * -1;
+    console.log("totalOffset:"+totalOffset);
+    document.querySelector('.slides').style.transform = `translateX(${totalOffset}px)`;
 }
 
-// function prevSlide() {
-//     const nextSlideIndex = Math.max(currentSlide - 3, 0); // Move back by three slides, ensuring not to go below 0
-//     showSlide(nextSlideIndex);
-// }
 function prevSlide() {
-    // Assuming 'currentSlide' represents the group index (0 for 0-1-2, 1 for 3-4-5, etc.)
-    const groupSize = 3;
-    const prevSlideIndex = Math.max(currentSlide - 1, 0);
-    showSlide(prevSlideIndex);
+    if (currentSlide - 3 > 0){
+        currentSlide = currentSlide - 3;
+        console.log(currentSlide);
+        showSlide();
+    }
 }
 
 function nextSlide() {
-    const nextSlideIndex = Math.min(currentSlide + 1, Math.ceil(totalSlides / 3) - 1); // Move forward by one slide, ensuring not to exceed the total slides
-    showSlide(nextSlideIndex);
+    if (currentSlide + 3 < totalSlides) {
+        currentSlide = currentSlide + 3;
+        console.log(currentSlide);
+        showSlide(); 
+    }
 }
