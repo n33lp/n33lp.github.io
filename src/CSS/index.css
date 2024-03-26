@@ -142,23 +142,6 @@ button {
   } */
 /* Media query for tablets */
 @media (width <= 1000px) {
-    /* body {
-        width: 90%;
-    }
-
-    .topnav {
-        font-size: 18px; 
-    }
-
-    .column {
-        width: 100%;
-    }
-
-    .particles {
-        width: 80%; 
-        left: 50%;
-        transform: translateX(-50%); 
-    } */
     body {
         width: 100%; /* Full width on very small devices */
     }
@@ -212,6 +195,112 @@ button {
 
 /* Media query for mobile devices */
 @media (width <=  480px) {
+    body {
+        width: 100%; /* Full width on very small devices */
+    }
+    p {
+        font-size: 12px;
+        /* line-height: 1; */
+    
+    }
+    #autoType {
+        font-size: 27px
+    }
+
+    .topnav {
+        font-size: 13px; /* Further decrease font size for mobile */
+    }
+
+    .topnav a {
+        padding: 10px 8px; /* Adjust padding for smaller screens */
+    }
+
+    .footer p {
+        font-size: 8px; /* Decrease footer font size */
+    }
+
+    .intro {
+        padding-top: 10%; /* Increase padding at the top */
+        height: 50vh; /* Adjust height for mobile view */
+    }
+    
+    /* Adjust image size for mobile */
+    .column img {
+        max-width: 90%;
+    }
+    .particles {
+        /* background-color: aqua; */
+        /* position: absolute; */
+        /* z-index: 0; */
+        /* top: 20%; */
+        /* left: 50%; */
+        /* transform: translateX(-95%); */
+        /* width: 50%; */
+        /* height: 40vh; */
+        /* border: 3px solid #73AD21; */
+        display: none;
+    }
+    #aboutButton{
+        font-size: 12px;
+    }
+    
+    /* Add other responsive adjustments as needed */
+}
+
+@media (max-width: 1000px) {
+    body {
+        width: 100%; /* Full width on very small devices */
+    }
+    p {
+        font-size: 12px;
+        /* line-height: 1; */
+    
+    }
+    #autoType {
+        font-size: 27px
+    }
+
+    .topnav {
+        font-size: 13px; /* Further decrease font size for mobile */
+    }
+
+    .topnav a {
+        padding: 10px 8px; /* Adjust padding for smaller screens */
+    }
+
+    .footer p {
+        font-size: 8px; /* Decrease footer font size */
+    }
+
+    .intro {
+        padding-top: 10%; /* Increase padding at the top */
+        height: 50vh; /* Adjust height for mobile view */
+    }
+    
+    /* Adjust image size for mobile */
+    .column img {
+        max-width: 90%;
+    }
+    .particles {
+        /* background-color: aqua; */
+        /* position: absolute; */
+        /* z-index: 0; */
+        /* top: 20%; */
+        /* left: 50%; */
+        /* transform: translateX(-95%); */
+        /* width: 50%; */
+        /* height: 40vh; */
+        /* border: 3px solid #73AD21; */
+        display: none;
+    }
+    #aboutButton{
+        font-size: 12px;
+    }
+    
+}
+
+/* Media query for mobile devices */
+@media (max-width:  480px) {
     body {
         width: 100%; /* Full width on very small devices */
     }
