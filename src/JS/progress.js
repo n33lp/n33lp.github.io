@@ -1,20 +1,28 @@
 //  Values
 const frontend_skills = [
     { 
-        name: "HTML",
-        stat: "90%",
+        name: "Flutter",
+        stat: "50%",
     },
     { 
-        name: "CSS",
-        stat: "80%",
+        name: "React",
+        stat: "40%",
     },
     { 
         name: "JavaScript",
         stat: "60%",
     },
     { 
-        name: "React",
-        stat: "40%",
+        name: "Dart",
+        stat: "70%",
+    },
+    { 
+        name: "HTML",
+        stat: "90%",
+    },
+    { 
+        name: "CSS",
+        stat: "80%",
     },
 ];
 
@@ -37,6 +45,10 @@ const backend_skills = [
     },
     { 
         name: "Flask",
+        stat: "40%",
+    },
+    { 
+        name: "FastAPI",
         stat: "40%",
     },
     { 

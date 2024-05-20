@@ -30,12 +30,6 @@ const projects = [
         sourceCode: "https://github.com/n33lp/Farmers-Portal" 
     },
     { 
-        imageUrl: "src/img/web.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
-        title: "Personal Website",
-        description: "This website, built using HTML, CSS, and JavaScript.",
-        sourceCode: "https://github.com/n33lp/n33lp.github.io" 
-    },
-    { 
         imageUrl: "src/img/QR.jpg", //https://qr.io/
         title: "CodeCatchers",
         description: "An android QR code catching game.",  
@@ -52,6 +46,12 @@ const projects = [
         title: "GitHubScraper",
         description: "A scraper to get Github stats.",
         sourceCode: "https://github.com/n33lp/GitHubScraper"
+    },
+    { 
+        imageUrl: "src/img/web.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
+        title: "Personal Website",
+        description: "This website, built using HTML, CSS, and JavaScript.",
+        sourceCode: "https://github.com/n33lp/n33lp.github.io" 
     },
 ];
 
