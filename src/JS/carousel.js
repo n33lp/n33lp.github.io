@@ -1,5 +1,11 @@
 const projects = [
     { 
+        imageUrl: "src/img/cardify.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
+        title: "Cardify",
+        description: "A cross-platform AI powered note-taking application.",
+        sourceCode: "https://github.com/n33lp/Cardify"
+    },
+    { 
         imageUrl: "src/img/healthcare.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
         title: "StrokeDetector",
         description: "A IOS app and a backend API that detects strokes in real time.",
@@ -46,12 +52,6 @@ const projects = [
         title: "GitHubScraper",
         description: "A scraper to get Github stats.",
         sourceCode: "https://github.com/n33lp/GitHubScraper"
-    },
-    { 
-        imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
-        title: "Coming Soon",
-        description: "Stay tooned.",
-        sourceCode: ""
     },
 ];
 
