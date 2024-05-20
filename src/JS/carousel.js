@@ -1,6 +1,6 @@
 const projects = [
     { 
-        imageUrl: "src/img/cardify.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
+        imageUrl: "src/img/cardify.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
         title: "Cardify",
         description: "A cross-platform AI powered note-taking application.",
         sourceCode: "https://github.com/n33lp/Cardify"
