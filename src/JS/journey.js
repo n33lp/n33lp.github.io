@@ -74,7 +74,7 @@ const blocks = [
         title: "Bachelor of Science",
         location: "University of Alberta",
         date: "Sept. 2019 - Apr. 2024",
-        link: "https://www.ualberta.ca/science/programs/bachelor-of-science/index.html",
+        link: "https://www.ualberta.ca/science/news/2024/convocation/neel-patel-bsc-computer-science-and-biological-sciences.html",
     },
     { 
         type: "education",
