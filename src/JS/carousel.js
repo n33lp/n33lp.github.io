@@ -1,5 +1,11 @@
 const projects = [
     { 
+        imageUrl: "src/img/olympicRings.svg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
+        title: "OlympicOracle",
+        description: "See the into the future of the Olympics.",
+        sourceCode: "https://github.com/n33lp/OlympicOracle"
+    },
+    { 
         imageUrl: "src/img/cardify.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
         title: "Cardify",
         description: "A cross-platform AI powered note-taking application.",
@@ -52,6 +58,18 @@ const projects = [
         title: "Personal Website",
         description: "This website, built using HTML, CSS, and JavaScript.",
         sourceCode: "https://github.com/n33lp/n33lp.github.io" 
+    },
+    { 
+        imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
+        title: "Coming Soon",
+        description: "Stay tooned.",
+        sourceCode: ""
+    },
+    { 
+        imageUrl: "src/img/code2.jpg", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
+        title: "Coming Soon",
+        description: "Stay tooned.",
+        sourceCode: ""
     },
 ];
 
