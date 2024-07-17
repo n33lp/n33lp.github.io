@@ -1,4 +1,10 @@
-const projects = [,
+const projects = [
+    { 
+        imageUrl: "src/img/olympicRings.png", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
+        title: "OlympicOracle",
+        description: "See the into the future of the Olympics.",
+        sourceCode: "https://github.com/n33lp/OlympicOracle"
+    },
     { 
         imageUrl: "src/img/cardify.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
         title: "Cardify",
@@ -64,12 +70,6 @@ const projects = [,
         title: "Coming Soon",
         description: "Stay tooned.",
         sourceCode: ""
-    },
-    { 
-        imageUrl: "src/img/olympicRings.png", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
-        title: "OlympicOracle",
-        description: "See the into the future of the Olympics.",
-        sourceCode: "https://github.com/n33lp/OlympicOracle"
     }
 ];
 
