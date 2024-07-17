@@ -1,10 +1,4 @@
-const projects = [
-    { 
-        imageUrl: "src/img/olympicRings.png", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
-        title: "OlympicOracle",
-        description: "See the into the future of the Olympics.",
-        sourceCode: "https://github.com/n33lp/OlympicOracle"
-    },
+const projects = [,
     { 
         imageUrl: "src/img/cardify.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
         title: "Cardify",
@@ -71,6 +65,12 @@ const projects = [
         description: "Stay tooned.",
         sourceCode: ""
     },
+    { 
+        imageUrl: "src/img/olympicRings.png", //https://dev.to/williamnogueira/the-problem-of-bloat-in-web-development-do-we-really-need-front-end-frameworks-14ma
+        title: "OlympicOracle",
+        description: "See the into the future of the Olympics.",
+        sourceCode: "https://github.com/n33lp/OlympicOracle"
+    }
 ];
 
 // Function to generate a slide for each project
@@ -147,3 +147,4 @@ function nextSlide() {
         showSlide(); 
     }
 }
+
