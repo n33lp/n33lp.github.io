@@ -76,6 +76,7 @@ button {
     cursor: pointer;
     /* width: 100%; */
     border-radius: 40px;
+    font-size: 18px;
 }
 
 #aboutButton{
