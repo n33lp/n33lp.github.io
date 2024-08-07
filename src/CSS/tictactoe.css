@@ -43,6 +43,18 @@
 }
 
 
+.difficulty-selection {
+    padding: 0% 0% 2% 0%;
+}
+
+.difficulty-selection button {
+    background-color: #6514d07e;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
 
 
 

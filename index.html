@@ -231,8 +231,15 @@
     
     <div class="mode-selection">
         <button id = "player" onclick="setMode('player')" >Vs Player</button>
-        <button id = "computer" onclick="setMode('computer')"style="background-color: black;">Vs Computer</button>
+        <button id = "computer" onclick="setMode('computer')" style="background-color: black;">Vs Computer</button>
     </div>
+
+    <div class="difficulty-selection" id="difficultySelection" style="display: none;">
+        <button id="easybtn" onclick="setDifficulty('easy')">Easy</button>
+        <button id="mediumbtn" onclick="setDifficulty('medium')" style="background-color: black;">Medium</button>
+        <button id="hardbtn" onclick="setDifficulty('hard')" style="background-color: black;">Hard</button>
+    </div>
+
 
     <div class="current-turn">
         Current Turn: <span id="currentPlayer">X</span>

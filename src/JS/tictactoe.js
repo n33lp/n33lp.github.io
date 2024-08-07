@@ -1,9 +1,9 @@
 let board = ['', '', '', '', '', '', '', '', ''];
 let currentPlayer = 'X';
 let gameMode = 'player'; // 'player' or 'computer'
+let difficulty = 'easy'; // 'easy', 'medium', 'hard'
 const cells = document.querySelectorAll('.cell');
 const currentPlayerDisplay = document.getElementById('currentPlayer');
-const gameModeDisplay = document.getElementById('gameModeDisplay');
 let gameActive = true;
 
 cells.forEach(cell => {
@@ -14,16 +14,95 @@ function setMode(mode) {
     gameMode = mode;
     const plybtn = document.getElementById('player');
     const cmpbtn = document.getElementById('computer');
+    const difficultySelection = document.getElementById('difficultySelection');
+    
     if (mode === 'player') {
         cmpbtn.style.backgroundColor = 'black';
         plybtn.style.backgroundColor = '#6514d07e';
+        difficultySelection.style.display = 'none'; // Hide difficulty buttons
     } else {
         cmpbtn.style.backgroundColor = '#6514d07e';
         plybtn.style.backgroundColor = 'black';
+        difficultySelection.style.display = 'block'; // Show difficulty buttons
     }
 
-
     restartGame();
+}
+
+function minimax(newBoard, player) {
+    const emptyCells = newBoard.map((cell, index) => cell === '' ? index : null).filter(index => index !== null);
+    
+    if (checkWinForMinimax(newBoard, 'X')) {
+        return { score: -10 };
+    } else if (checkWinForMinimax(newBoard, 'O')) {
+        return { score: 10 };
+    } else if (emptyCells.length === 0) {
+        return { score: 0 };
+    }
+
+    let moves = [];
+
+    for (let i = 0; i < emptyCells.length; i++) {
+        let move = {};
+        move.index = emptyCells[i];
+        newBoard[emptyCells[i]] = player;
+
+        if (player === 'O') {
+            let result = minimax(newBoard, 'X');
+            move.score = result.score;
+        } else {
+            let result = minimax(newBoard, 'O');
+            move.score = result.score;
+        }
+
+        newBoard[emptyCells[i]] = '';
+        moves.push(move);
+    }
+
+    let bestMove;
+    if (player === 'O') {
+        let bestScore = -Infinity;
+        for (let i = 0; i < moves.length; i++) {
+            if (moves[i].score > bestScore) {
+                bestScore = moves[i].score;
+                bestMove = moves[i];
+            }
+        }
+    } else {
+        let bestScore = Infinity;
+        for (let i = 0; i < moves.length; i++) {
+            if (moves[i].score < bestScore) {
+                bestScore = moves[i].score;
+                bestMove = moves[i];
+            }
+        }
+    }
+
+    return bestMove;
+}
+
+
+function setDifficulty(level) {
+    difficulty = level;
+    const easybtn = document.getElementById('easybtn');
+    const mediumbtn = document.getElementById('mediumbtn');
+    const hardbtn = document.getElementById('hardbtn');
+
+    if (level === 'easy') {
+        easybtn.style.backgroundColor = '#6514d07e';
+        mediumbtn.style.backgroundColor = 'black';
+        hardbtn.style.backgroundColor = 'black';
+    } else if (level === 'medium') {
+        easybtn.style.backgroundColor = 'black';
+        mediumbtn.style.backgroundColor = '#6514d07e';
+        hardbtn.style.backgroundColor = 'black';
+    }
+    else if (level === 'hard') {
+        easybtn.style.backgroundColor = 'black';
+        mediumbtn.style.backgroundColor = 'black';
+        hardbtn.style.backgroundColor = '#6514d07e';
+    }
+    resetBoard();
 }
 
 function handleClick(event) {
@@ -49,10 +128,16 @@ function handleClick(event) {
 
 function computerMove() {
     setTimeout(() => {
-        const emptyCells = board.map((cell, index) => cell === '' ? index : null).filter(index => index !== null);
-        const randomIndex = emptyCells[Math.floor(Math.random() * emptyCells.length)];
-        board[randomIndex] = 'O';
-        cells[randomIndex].textContent = 'O';
+        if (difficulty === 'easy') {
+            easyMove();
+        } else if (difficulty === 'medium') {
+            if (!blockPlayer()) {
+                easyMove();
+            }
+        } else if (difficulty === 'hard') {
+            hardMove();
+        }
+
         if (checkWin()) {
             displayWin();
         } else {
@@ -60,6 +145,76 @@ function computerMove() {
             currentPlayerDisplay.textContent = currentPlayer;
         }
     }, 500);
+}
+
+function easyMove() {
+    const emptyCells = board.map((cell, index) => cell === '' ? index : null).filter(index => index !== null);
+    const randomIndex = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+    board[randomIndex] = 'O';
+    cells[randomIndex].textContent = 'O';
+}
+
+function blockPlayer() {
+    const winPatterns = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+    ];
+
+    for (let pattern of winPatterns) {
+        const [a, b, c] = pattern;
+        if (board[a] === 'X' && board[b] === 'X' && board[c] === '') {
+            board[c] = 'O';
+            cells[c].textContent = 'O';
+            return true;
+        }
+        if (board[a] === 'X' && board[c] === 'X' && board[b] === '') {
+            board[b] = 'O';
+            cells[b].textContent = 'O';
+            return true;
+        }
+        if (board[b] === 'X' && board[c] === 'X' && board[a] === '') {
+            board[a] = 'O';
+            cells[a].textContent = 'O';
+            return true;
+        }
+    }
+    return false;
+}
+
+function hardMove() {
+    const bestMove = minimax(board, 'O');
+    board[bestMove.index] = 'O';
+    cells[bestMove.index].textContent = 'O';
+}
+
+function checkWinForMinimax(board, player) {
+    const winPatterns = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+    ];
+
+    return winPatterns.some(pattern => {
+        return pattern.every(index => board[index] === player);
+    });
+}
+
+
+
+function findBestMove() {
+    const emptyCells = board.map((cell, index) => cell === '' ? index : null).filter(index => index !== null);
+    return emptyCells[Math.floor(Math.random() * emptyCells.length)];
 }
 
 function checkWin() {
@@ -77,24 +232,11 @@ function checkWin() {
     return winPatterns.some(pattern => {
         if (pattern.every(index => board[index] === currentPlayer)) {
             drawWinLine(pattern);
-            // colourWinBoxes(pattern)
             return true;
         }
         return false;
     });
 }
-
-function colourWinBoxes(pattern) {
-    const [first, second, third] = pattern;
-    cells[first].style.backgroundColor = 'coral';
-    cells[second].style.backgroundColor = 'coral';
-    cells[third].style.backgroundColor = 'coral';
-    cells[first].style.color = 'black';
-    cells[second].style.color = 'black';
-    cells[third].style.color = 'black';
-
-}
-
 
 function drawWinLine(pattern) {
     let [start, middle, end] = pattern;
@@ -132,7 +274,6 @@ function drawWinLine(pattern) {
         winLine.style.top = `${(endElement.bottom - startElement.top)/2 - 6}px`;
         winLine.style.left = `${(boardElement.width/2) - (width/2)}px`;
         (start < 1) ? winLine.style.transform = `rotate(45deg)` : winLine.style.transform = `rotate(-45deg)`;
-
 
     }
 }
