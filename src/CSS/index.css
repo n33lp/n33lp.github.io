@@ -13,6 +13,11 @@ p {
 
 }
 
+.section {
+    padding-top: 10%;
+}
+
+
 #autoType {
     font-size: 60px
 }
@@ -38,16 +43,16 @@ p {
 /* Top navigation styling */
 .topnav {
     font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding:10px 0px 10px 0px;
-  color: white;
-  position: sticky;
-  top: 0; /* Stick the navigation bar to the top of the viewport */
-  width: 100%; /* Set the width to 100% */
-  overflow: hidden;
-  z-index: 1000; /* Ensure it's above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0px 10px 0px;
+    color: white;
+    position: sticky;
+    top: 0; /* Stick the navigation bar to the top of the viewport */
+    width: 100%; /* Set the width to 100% */
+    overflow: hidden;
+    z-index: 1000; /* Ensure it's above other content */
 }
 
 .topnav a {
@@ -98,8 +103,6 @@ button {
 
 .about {
     text-align: left;
-    padding-top: 20%;
-    padding-bottom: 10%;
     line-height: 1.15;
 }
   
@@ -135,12 +138,7 @@ button {
     height: 40vh;
     /* border: 3px solid #73AD21; */
 }
-/* .row {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    background-color: aquamarine;
-  } */
+
 /* Media query for tablets */
 @media (width <= 1000px) {
     /* body {

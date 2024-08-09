@@ -89,6 +89,28 @@ var typed = new Typed('#element', {
   }
 
 
+  function scrollToContact() {
+    event.preventDefault(); // Prevent the default anchor behavior
+    
+    const section = document.getElementById("contact");
+    
+    // Calculate the position you want to scroll to
+    const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const sectionHeight = section.clientHeight;
+    const middleOfWindow = windowHeight / 2;
+    
+    // Adjust the position to center the section vertically
+    const scrollToPosition = sectionTop - (middleOfWindow - (sectionHeight / 2));
+    
+    // Smoothly scroll to the adjusted position
+    window.scrollTo({
+      top: scrollToPosition,
+      behavior: 'smooth'
+    });
+  }
+
+
   function scrollToProjects() {
     event.preventDefault(); // Prevent the default anchor behavior
     
