@@ -1,5 +1,4 @@
 import user_info from "../../data/user_info.js";
-import GitHubButton from "react-github-btn";
 import { FaArrowCircleUp } from "react-icons/fa";
 
 function Footer({ theme }) {
