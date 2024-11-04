@@ -3,7 +3,6 @@ import Homepage from './pages/Homepage'
 import NotFound from './pages/404'
 import { useEffect, useState } from 'react';
 import { createContext } from 'react';
-import "preline/preline";
 
 export const AppContext = createContext();
 
