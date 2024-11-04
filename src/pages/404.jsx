@@ -1,4 +1,4 @@
-
+import { FaSadTear } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
 function NotFound() {
@@ -10,7 +10,7 @@ function NotFound() {
                 <div className='flex h-screen justify-center px-6'>
                     <div className='self-center text-zinc-900 dark:text-zinc-300'>
                         <div className='flex text-5xl justify-center font-bold gap-4'>
-                            Oops! 
+                            Oops! <FaSadTear />
                         </div>
                         <div className="text-center leading-7 mt-6 text-lg font-light text-zinc-500 dark:text-zinc-400">
                             We can&lsquo;t seem to find the page you&lsquo;re looking
