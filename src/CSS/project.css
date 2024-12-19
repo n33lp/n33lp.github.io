@@ -6,38 +6,37 @@
 }
 
 .project-card {
-    /* border: 1px solid coral; */
-    border-radius: 10px;
+    border-radius: .5em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: fit-content;
+    max-width: 1fr; /* Maximum width, one fraction of the grid space */
     padding: 0.5em;
     justify-content: space-between;
-    transition: transform 0.3s ease, background-color 0.3s ease;  /* Smooth transitions for transform and background color */
-    cursor: default;  /* Optional: Changes the cursor to a pointer to indicate interactivity */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: default;
 }
 
 .project-card:hover {
-    transform: scale(1.05);  /* Slightly increase the size of the card */
-    background-color: #3a3a3a;  /* Slightly lighten the background color on hover */
+    transform: scale(1.05);
+    background-color: #3a3a3a;
 }
 
-
-
-.project-card h1{
+.project-card h1 {
     font-size: 1.5em;
 }
-.project-card p{
+
+.project-card p {
     font-size: .75em;
     margin-bottom: 1em;
 }
+
 .projectTags {
     display: flex;
+    flex-wrap: wrap; /* Wrap tags to next line if they exceed the card width */
+    gap: 0.2em; /* Spacing between tags */
+    width: 100%; /* Use full width */
     margin: 0.5em 0 .75em 0;
-    width: 90%;
-    scrollbar-color: #9f0e0e #bb2020; /* Optional: customizes the scrollbar color */
-    /* overflow:scroll; */
 }
 
 .project-tag {
@@ -46,23 +45,14 @@
     border-radius: 1em;
     font-size: .75em;
     padding: 0 .6em;
-    margin: 0 .2em;
+    margin: 0; /* Align margin for consistency */
 }
-
-.project-card a{
-    align-items: bottom;
-}
-
 .project-tag p{
-    font-size: 1em;
-    margin: 0;
+    margin: 0%;
+    padding: .25em 0;
 }
 
-.project button{
+.project button {
     min-height: none;
     min-width: none;
 }
-
-
-
-

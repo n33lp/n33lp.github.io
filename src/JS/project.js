@@ -4,7 +4,7 @@ const projects = [
         title: "OlympicOracle",
         description: "OlympicOracle is a web application that predict the outcome of the 2024 summer olypmics, based on previous olympic data.",
         sourceCode: "https://github.com/n33lp/OlympicOracle",
-        projectTags: "NumPy,React,Django"
+        projectTags: "NumPy,React,Django,NumPy,React,Django,NumPy,React,Django"
     },
     { 
         imageUrl: "src/img/cardify.jpg", //OpenAI. (2024). ChatGPT [Large language model]. /g/g-gFt1ghYJl-logo-creator
