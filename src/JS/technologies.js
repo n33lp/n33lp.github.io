@@ -173,6 +173,13 @@ const technologies = [
     { 
         imageUrl: "src/img/technologies/code.svg", 
         title: "code",
+    },    { 
+        imageUrl: "src/img/technologies/digitalocean.svg", 
+        title: "Digital Ocean",
+    },
+    { 
+        imageUrl: "src/img/technologies/django.svg", 
+        title: "Django",
     },
 ];
 
