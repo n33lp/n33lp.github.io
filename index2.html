@@ -6,7 +6,6 @@
     <title>Hey! I'm Neel</title>
     <link rel="stylesheet" href="src/CSS/index.css">
     <link rel="stylesheet" href="src/CSS/progress-bars.css">
-    <link rel="stylesheet" href="src/CSS/tictactoe.css">
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -29,8 +28,7 @@
         <a class="nav-link " href="" onclick="scrollToSkills()">Skills</a>
         <a class="nav-link " href="" onclick="scrollToJourney()">Journey</a>
         <a class="nav-link " href="" onclick="scrollToProjects()">Projects</a>
-        <a class="nav-link " href="" onclick="scrollToTTT()">TTT</a>
-        <a class="nav-link " href="" onclick="scrollToContact()">Contact</a>
+        <a class="nav-link " href="mailto: neel.patel0126@gmail.com">Contact</a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="navFunc()">
         <i class="fa fa-bars"></i>
@@ -69,9 +67,28 @@
     <script src="src/JS/particles.js"></script>
     <script src="src/JS/app.js"></script>
       
+    <script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function() {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+        requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    </script>
 </div>
 
-<div class="about section" style="padding-top: 15%;" id="about">
+<div class="about" id="about">
     <div class = "containers">
         <div class="row">
             <div class="column">
@@ -90,8 +107,8 @@
     </div>
 </div>
 
-<div class="skills section" id="skills">
-    <h1 style="text-align:center;">MY SKILLS</h1>
+<div class="skills" id="skills">
+    <h1 style="text-align:center; padding-top: 5%;">MY SKILLS</h1>
     <!-- Frontend Developer Section -->
     <div class="category">
         <details class="dropdown">
@@ -183,19 +200,19 @@
     <script src="src/JS/progress.js"></script>
 </div>
 
-<div class="journey section" id="journey">
+<div class="journey" id="journey">
     <link rel="stylesheet" href="src/CSS/journey.css">
-    <h1 style="text-align:center;">MY JOURNEY</h1>
+    <h1 style="text-align:center; padding-top: 15%;">MY JOURNEY</h1>
     <div class="timeline-container">
         <!-- items -->
-      
+
+        
     </div>
     <script src="src/JS/journey.js"></script>
-    
 </div>
 
-<div class="projects section" id="projects">
-    <h1 style="text-align:center;">MY PROJECTS</h1>
+<div class="projects" id="projects">
+    <h1 style="text-align:center;padding-top: 15%;">MY PROJECTS</h1>
     <br>
     <link rel="stylesheet" href="src/CSS/carousel.css">
     <div class="carousel">
@@ -205,77 +222,6 @@
     </div>
     <script src="src/JS/carousel.js"></script>
 </div>
-
-
-<div class="tictactoe section" id="tictactoe">
-    <h1 style="padding-bottom: 2%">Tic Tac Toe</h1>
-    
-    <div class="mode-selection">
-        <button id = "player" onclick="setMode('player')" >Vs Player</button>
-        <button id = "computer" onclick="setMode('computer')" style="background-color: black;">Vs Computer</button>
-    </div>
-
-    <div class="difficulty-selection" id="difficultySelection" style="display: none;">
-        <button id="easybtn" onclick="setDifficulty('easy')">Easy</button>
-        <button id="mediumbtn" onclick="setDifficulty('medium')" style="background-color: black;">Medium</button>
-        <button id="hardbtn" onclick="setDifficulty('hard')" style="background-color: black;">Hard</button>
-    </div>
-
-
-    <div class="current-turn">
-        Current Turn: <span id="currentPlayer">X</span>
-    </div>
-
-
-    
-    <div class="board">
-        <div class="cell" data-index="0"></div>
-        <div class="cell" data-index="1"></div>
-        <div class="cell" data-index="2"></div>
-        <div class="cell" data-index="3"></div>
-        <div class="cell" data-index="4"></div>
-        <div class="cell" data-index="5"></div>
-        <div class="cell" data-index="6"></div>
-        <div class="cell" data-index="7"></div>
-        <div class="cell" data-index="8"></div>
-    </div>
-    <div style="padding-top: 2%;">
-    <button onclick="restartGame()">Restart Game</button>
-    </div>
-    <script src="src/JS/tictactoe.js"></script>
-</div>
-
-
-
-
-<div class="contact-container section" id="contact">
-    <link rel="stylesheet" href="src/CSS/contact.css">
-    <h2>Contact Me</h2>
-    <div class="contact-form">
-        <form action="https://formspree.io/f/mldrnblj" method="POST">
-            <div class="group">
-                <input required="" type="text" class="input" id="inputName" name="name">
-                <label for="inputName">Name</label>
-            </div>
-            
-            <div class="group">
-                <input required="" type="text" class="input" id="inputEmail" name="email">
-                <label for="inputEmail">Email</label>
-                <span id="emailError" style="color:red;display:none;">Please enter a valid email address.</span>
-            </div>
-            
-            <div class="group">
-                <textarea required="" class="input" id="inputMessage" name="message" rows="10"></textarea>
-                <label for="inputMessage">Message</label>
-            </div>
-            
-            <button type="submit" class="btn-outline-primary">Send</button>
-        </form>
-    </div>
-    <script src="src/JS/contact.js"></script>
-</div>
-
-
 
 <div class="footer" id="footer">
     <p>&copy; 2024</p>

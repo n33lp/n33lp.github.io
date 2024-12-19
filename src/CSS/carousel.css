@@ -1,0 +1,157 @@
+.carousel {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.carousel .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * 3); /* Assuming you have 3 slides, each 100% wide */
+}
+
+.carousel .slide {
+    width: calc(100% / 3); /* Display three cards per slide */
+    overflow: hidden;
+}
+
+.carousel .slide .card {
+    width: calc(100% - 20px); /* Adjust card width to account for padding */
+    margin-bottom: 10px; /* Add margin between cards */
+}
+
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Card styling */
+.card {
+    /* background-color: #f8f9fa; */
+    border: 1px solid coral;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%; /* Ensure card takes up full width of slide */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation buttons */
+.carousel .prev,
+.carousel .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; /* Adjust font size as needed */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    z-index: 2;
+}
+
+#carouselDescription{
+    font-size: 20px;
+}
+
+#carouselTitle{
+    font-size: 30px;
+    color: dodgerblue;
+}
+
+#carouselButton{
+    background-color: dodgerblue;
+    border-radius: 10px;
+    color: black;
+}
+
+.carousel .prev {
+    left: 0;
+}
+
+.carousel .next {
+    right: 0;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .carousel .slides {
+        width: 100%; /* Set width to 100% to show one slide for the entire viewport */
+    }
+
+    .carousel .slide {
+        width: 100%; /* Each slide should be full width to show only one card at a time */
+        padding: 5px; /* Optional: Adjust padding for smaller screens */
+    }
+
+    .carousel .slide .card {
+        width: calc(100% - 10px); /* Adjust the width if you have padding */
+        margin: auto; /* Center the card in the slide if there's any horizontal padding */
+    }
+
+    #carouselDescription{
+        font-size: 10px;
+    }
+    #carouselTitle{
+        font-size: 11px;
+        color: dodgerblue;
+    }
+    #carouselButton{
+        background-color: dodgerblue;
+        border-radius: 5px;
+        color: black;
+        font-size: 9px;
+        padding: 7px 10px;
+        margin: 5px 0;
+        margin-bottom: 0px;
+    }
+
+    .carousel .prev,
+    .carousel .next {
+        font-size: 10px; /* Adjust the size of the navigation buttons for mobile */
+        padding: 6px; /* Adjust the padding for the navigation buttons */
+        /* display: none; Optionally hide buttons if you don't want them on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel .slides {
+        width: 100%; /* Set width to 100% to show one slide for the entire viewport */
+    }
+
+    .carousel .slide {
+        width: 100%; /* Each slide should be full width to show only one card at a time */
+        padding: 5px; /* Optional: Adjust padding for smaller screens */
+    }
+
+    .carousel .slide .card {
+        width: calc(100% - 10px); /* Adjust the width if you have padding */
+        margin: auto; /* Center the card in the slide if there's any horizontal padding */
+    }
+
+    #carouselDescription{
+        font-size: 10px;
+    }
+    #carouselTitle{
+        font-size: 11px;
+        color: dodgerblue;
+    }
+    #carouselButton{
+        background-color: dodgerblue;
+        border-radius: 5px;
+        color: black;
+        font-size: 9px;
+        padding: 7px 10px;
+        margin: 5px 0;
+        margin-bottom: 0px;
+    }
+
+    .carousel .prev,
+    .carousel .next {
+        font-size: 10px; /* Adjust the size of the navigation buttons for mobile */
+        padding: 6px; /* Adjust the padding for the navigation buttons */
+        /* display: none; Optionally hide buttons if you don't want them on mobile */
+    }
+}
