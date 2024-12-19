@@ -181,6 +181,10 @@ const technologies = [
         imageUrl: "src/img/technologies/django.svg", 
         title: "Django",
     },
+    { 
+        imageUrl: "src/img/technologies/git.svg", 
+        title: "Git",
+    },
 ];
 
 
