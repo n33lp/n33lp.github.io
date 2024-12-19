@@ -1,4 +1,4 @@
-const act_technologies = [
+const technologies = [
     { 
         imageUrl: "src/img/technologies/aws.svg", 
         title: "AWS EC2",
@@ -161,7 +161,7 @@ const act_technologies = [
     },
 ];
 
-const technologies = [
+const act_technologies = [
     { 
         imageUrl: "src/img/technologies/aws.svg", 
         title: "AWS EC2",
