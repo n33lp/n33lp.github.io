@@ -78,3 +78,12 @@ li{
 .location-title p{
     font-size: .6em;
 }
+
+.past-icon{
+    display: flex;
+    gap: .5em;
+}
+
+.publication{
+    padding-top: 1em;
+}

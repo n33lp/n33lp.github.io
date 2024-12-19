@@ -10,7 +10,8 @@ h1, h2, h3, h4, h5, h6{
 
 
 .intro-text h1{
-    margin: .5em 0;
+    margin: .2em 0;
+    font-size: 3em;
 }
 
 p{
@@ -36,6 +37,10 @@ button{
 
 .intro-text button{
     font-size: 1em;
+    width: 100%;
+}
+
+.buttons a{
     width: 48%;
 }
 
