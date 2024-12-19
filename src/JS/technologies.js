@@ -1,4 +1,4 @@
-const technologies = [
+const act_technologies = [
     { 
         imageUrl: "src/img/technologies/aws.svg", 
         title: "AWS EC2",
@@ -160,6 +160,18 @@ const technologies = [
         title: "TypeScript",
     },
 ];
+
+const technologies = [
+    { 
+        imageUrl: "src/img/technologies/aws.svg", 
+        title: "AWS EC2",
+    },
+    { 
+        imageUrl: "src/img/technologies/aws.svg", 
+        title: "AWS S2",
+    },
+];
+
 
 // for cloud?
 function fetchSVG(url) {
