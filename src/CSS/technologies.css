@@ -21,6 +21,11 @@
     border-radius: .5em; /* Rounded edges */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds subtle shadow */
     height: 2em;
+    transition: transform 0.3s ease;
+}
+
+.technology-card:hover {
+    transform: translateY(-5px); /* Moves the card up by 5 pixels on hover */
 }
 
 .technology-card-logo{
@@ -29,9 +34,9 @@
     height: 1.5em;
 }
 
-.technology-card-logo:hover {
-    fill: red; /* Change color on hover */
-}
+/* .technology-card-logo:hover { only for the logo
+    fill: red; Change color on hover 
+} */
 
 .testing-technology-card-img{
     display: flex;
