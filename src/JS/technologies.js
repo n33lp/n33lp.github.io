@@ -167,8 +167,12 @@ const technologies = [
         title: "AWS EC2",
     },
     { 
-        imageUrl: "src/img/technologies/aws.svg", 
-        title: "AWS S2",
+        imageUrl: "src/img/technologies/cloudcomputing.svg", 
+        title: "cloudcomputing",
+    },
+    { 
+        imageUrl: "src/img/technologies/code.svg", 
+        title: "code",
     },
 ];
 
