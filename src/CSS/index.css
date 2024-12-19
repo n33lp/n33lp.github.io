@@ -1,25 +1,98 @@
 body {
-    color: rgb(204, 209, 215);
-    background-color: #000;
-    padding: 0; 
-    width: 70%;
-    margin: 0 auto; /* Centers the body horizontally */
-    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    font-size: 20px;
+    font-family: 'Poppins' !important ;
 }
 
-p {
-    font-size: 30px;
-    /* line-height: 1; */
-
-}
-
-.section {
-    padding-top: 10%;
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
 }
 
 
-#autoType {
-    font-size: 60px
+.intro-text h1{
+    margin: .5em 0;
+}
+
+p{
+    margin: 0;
+}
+
+button{
+  background-color: transparent;
+  border: 2px solid coral;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: coral;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  min-height: 3em;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.intro-text button{
+    font-size: 1em;
+    width: 48%;
+}
+
+
+
+button:disabled {
+  pointer-events: none;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.intro-text .buttons{
+    display: flex;
+    margin-top: 1em;
+    justify-content: space-between;
+}
+.main{
+    color: rgb(255, 255, 255);
+    background-color: #111;
+    width: 75%;
+    margin: 0 auto; 
+}
+
+.main-content{
+    width: 95%;
+    margin: 0 auto;  
+}
+
+.intro-text{
+    max-width: 60%;
+    height: fit-content;
+    margin: auto 0;
+}
+
+.intro-img{
+    max-width: 30%;
+}
+.intro-img img{
+    max-width: 100%;   
+    border-radius: 1.5em;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    gap: 5%; /* Adjust the value as needed */
+    padding: 5% 0;
 }
 
 .footer p {
@@ -29,236 +102,4 @@ p {
     padding-top: 50px;
     text-align: center;
 
-}
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Top navigation styling */
-.topnav {
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:10px 0px 10px 0px;
-    color: white;
-    position: sticky;
-    top: 0; /* Stick the navigation bar to the top of the viewport */
-    width: 100%; /* Set the width to 100% */
-    overflow: hidden;
-    z-index: 1000; /* Ensure it's above other content */
-}
-
-.topnav a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-}
-
-.topnav a.active {
-    background-color: #6514d07e;
-    color: white;
-    border-radius: 40px; /* Rounded corners for the active link */
-}
-
-.topnav .icon {
-    display: none;
-}
-
-/* add 2 styles. 1 generic button and 2 button for connecting */
-button {
-    background-color: #6514d07e;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    /* width: 100%; */
-    border-radius: 40px;
-    font-size: 18px;
-}
-
-#aboutButton{
-    font-size: 30px;
-}
-
-
-.intro {
-    z-index: 1;
-    /* background-color: #4CAF50; */
-    margin: 0 auto;
-    height: 60vh;
-    align-items: center;
-    /* display: block; */
-    display: flex;
-    padding-top: 5%;
-
-}
-
-.about {
-    text-align: left;
-    line-height: 1.15;
-}
-  
-.column {
-    float: left;
-    width: 50%;
-}
-
-.column img{
-    border-radius: 50%;
-    max-width: 80%;
-    
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.row{
-    align-items: center;
-    display: flex;
-}
-
-.particles {
-    position: absolute;
-    z-index: 0;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-85%);
-    width: 50%;
-    height: 40vh;
-    /* border: 3px solid #73AD21; */
-}
-
-/* Media query for tablets */
-@media (width <= 1000px) {
-    /* body {
-        width: 90%;
-    }
-
-    .topnav {
-        font-size: 18px; 
-    }
-
-    .column {
-        width: 100%;
-    }
-
-    .particles {
-        width: 80%; 
-        left: 50%;
-        transform: translateX(-50%); 
-    } */
-    body {
-        width: 100%; /* Full width on very small devices */
-    }
-    p {
-        font-size: 12px;
-        /* line-height: 1; */
-    
-    }
-    #autoType {
-        font-size: 27px
-    }
-
-    .topnav {
-        font-size: 13px; /* Further decrease font size for mobile */
-    }
-
-    .topnav a {
-        padding: 10px 8px; /* Adjust padding for smaller screens */
-    }
-
-    .footer p {
-        font-size: 8px; /* Decrease footer font size */
-    }
-
-    .intro {
-        padding-top: 10%; /* Increase padding at the top */
-        height: 50vh; /* Adjust height for mobile view */
-    }
-    
-    /* Adjust image size for mobile */
-    .column img {
-        max-width: 90%;
-    }
-    .particles {
-        /* background-color: aqua; */
-        /* position: absolute; */
-        /* z-index: 0; */
-        /* top: 20%; */
-        /* left: 50%; */
-        /* transform: translateX(-95%); */
-        /* width: 50%; */
-        /* height: 40vh; */
-        /* border: 3px solid #73AD21; */
-        display: none;
-    }
-    #aboutButton{
-        font-size: 12px;
-    }
-    
-}
-
-/* Media query for mobile devices */
-@media (width <=  480px) {
-    body {
-        width: 100%; /* Full width on very small devices */
-    }
-    p {
-        font-size: 12px;
-        /* line-height: 1; */
-    
-    }
-    #autoType {
-        font-size: 27px
-    }
-
-    .topnav {
-        font-size: 12px; /* Further decrease font size for mobile */
-    }
-
-    .topnav a {
-        padding: 8px 8px; /* Adjust padding for smaller screens */
-    }
-
-    .footer p {
-        font-size: 8px; /* Decrease footer font size */
-    }
-
-    .intro {
-        padding-top: 10%; /* Increase padding at the top */
-        height: 50vh; /* Adjust height for mobile view */
-    }
-    
-    /* Adjust image size for mobile */
-    .column img {
-        max-width: 90%;
-    }
-    .particles {
-        /* background-color: aqua; */
-        /* position: absolute; */
-        /* z-index: 0; */
-        /* top: 20%; */
-        /* left: 50%; */
-        /* transform: translateX(-95%); */
-        /* width: 50%; */
-        /* height: 40vh; */
-        /* border: 3px solid #73AD21; */
-        display: none;
-    }
-    #aboutButton{
-        font-size: 12px;
-    }
-    
-    /* Add other responsive adjustments as needed */
 }
