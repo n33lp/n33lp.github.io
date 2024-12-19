@@ -40,6 +40,10 @@ const technologies = [
         title: "Docker",
     },
     { 
+        imageUrl: "src/img/technologies/android.svg", 
+        title: "Espresso",
+    },
+    { 
         imageUrl: "src/img/technologies/fastapi.svg", 
         title: "FastApi",
     },
@@ -64,6 +68,10 @@ const technologies = [
         title: "GitHub",
     },
     { 
+        imageUrl: "src/img/technologies/gradle.svg", 
+        title: "Gradle",
+    },
+    { 
         imageUrl: "src/img/technologies/heroku.svg", 
         title: "Heroku",
     },
@@ -86,6 +94,10 @@ const technologies = [
     { 
         imageUrl: "src/img/technologies/julia.svg", 
         title: "Julia",
+    },
+    { 
+        imageUrl: "src/img/technologies/junit.svg", 
+        title: "JUnit",
     },
     { 
         imageUrl: "src/img/technologies/kotlin.svg", 
@@ -138,6 +150,10 @@ const technologies = [
     { 
         imageUrl: "src/img/technologies/react.svg", 
         title: "React",
+    },
+    { 
+        imageUrl: "src/img/technologies/selenium.svg", 
+        title: "Selenium",
     },
     { 
         imageUrl: "src/img/technologies/sql.svg", 
