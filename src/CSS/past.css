@@ -29,7 +29,7 @@ li{
     top: 1.5em;  /* Start the line below the date, adjust this value based on your layout */
     bottom: 0;
     width: 2px;
-    background-color: white;  /* Ensure the line is visible on the contrasting background */
+    background-color: rgb(129, 22, 22);  /* Ensure the line is visible on the contrasting background */
     z-index: 10;  /* High z-index to keep it on top */
 }
 
