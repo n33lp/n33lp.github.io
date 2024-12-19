@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey! I'm Neel</title>
+    <link rel="stylesheet" href="src/CSS/index.css">
+    <link rel="stylesheet" href="src/CSS/progress-bars.css">
+    <link rel="stylesheet" href="src/CSS/tictactoe.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    
+</head>
+<body>
+
+
+<div class="topnav" id="myTopnav" style="background-color: black;">
+    <span>Neel</span>
+    <div>
+        <!-- <a class="nav-link " href="#home" onclick="setActive(this);scrollToHome()">Home</a> -->
+        <a class="nav-link " href="#home" onclick="scrollToHome()">Home</a>
+        <a class="nav-link " href="" onclick="scrollToAbout()">About</a>
+        <a class="nav-link " href="" onclick="scrollToSkills()">Skills</a>
+        <a class="nav-link " href="" onclick="scrollToJourney()">Journey</a>
+        <a class="nav-link " href="" onclick="scrollToProjects()">Projects</a>
+        <a class="nav-link " href="" onclick="scrollToTTT()">TTT</a>
+        <a class="nav-link " href="" onclick="scrollToContact()">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="navFunc()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+
+<div class="intro" id="intro">
+    <div class = "containers">
+        <div class="row">
+            <div class="column">
+                <p>Hey!</p>
+                <br>
+                <p id="autoType">I am <span id="element" style="color: coral;"></span></p>
+                <!-- https://github.com/mattboldt/typed.js/ -->
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                <script src="src/JS/index.js"></script>
+                <br>
+                <p>I aspire to be a specialist in building and <span style="color:dodgerblue">designing exceptional digital experiences.</span></p>
+                
+            </div>
+            <div class="column">
+                <img src="src/img/profile.jpg" style="float: right;">
+            </div>
+        </div>
+    </div>
+</div>
+<button onclick="scrollToAbout()" id="aboutButton">About me</button>
+
+<div class="particles">
+    <div class="count-particles">
+        <span class="js-count-particles"></span>
+    </div>
+      
+    <div id="particles-js" ></div>
+    <script src="src/JS/particles.js"></script>
+    <script src="src/JS/app.js"></script>
+      
+</div>
+
+<div class="about section" style="padding-top: 15%;" id="about">
+    <div class = "containers">
+        <div class="row">
+            <div class="column">
+                <img src="src/img/about.jpg">
+            </div>
+            <div class="column">
+                <p>Hey, I'm Neel. I'm nearing the end of my journey at the <span style="color: rgb(97, 168, 107);">University of Alberta</span>, soon to complete a BSc with a double major in <span style="color:dodgerblue">Computer Science</span> and <span style="color:dodgerblue">Biological Science</span> — a weird but fascinating combination, right?</p>
+                <br>
+                <p>My passions have led me to explore diverse worlds, from <span style="color: coral;">lab work</span> to <span style="color: coral;">research</span> to <span style="color: coral;">software development</span>.</p>
+                <br>
+                <p>As I approach the conclusion of my degree, my sights are set on a career in <span style="color: coral;">software development</span>. I am passionate about up and coming technologies and am always looking for new opportunities to learn and grow.</p>
+                <br>
+                <p>If you think I am a good fit for your team please feel free to email me at <a href="mailto: neel.patel0126@gmail.com" style="color:dodgerblue;text-decoration:none">neel.patel0126@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/n33lp/" target="_blank" style="color:dodgerblue; text-decoration:none">LinkedIn</a>.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="skills section" id="skills">
+    <h1 style="text-align:center;">MY SKILLS</h1>
+    <!-- Frontend Developer Section -->
+    <div class="category">
+        <details class="dropdown">
+            <summary>
+                <div class="summary-content">
+                    <div class="left-content">
+                        <p>
+                            <i class="icon fas fa-code"></i>
+                            <span style="color: dodgerblue;">Frontend Development</span>
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-down summary-chevron"></i>
+                </div>
+            </summary>
+            <div class="dropdown-details">
+                <div class="frontend-skills">
+                    <!-- progress.js will populate -->
+                </div>
+            </div>
+        </details>
+    </div>
+       
+    <!-- Backend Developer Section -->
+    <div class="category">
+        <details class="dropdown">
+            <summary>
+                <div class="summary-content">
+                    <div class="left-content">
+                        <p>
+                            <i class="icon fas fa-server"></i>
+                            <span style="color: dodgerblue;">Backend Development</span>
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-down summary-chevron"></i>
+                </div>
+            </summary>
+            <div class="dropdown-details">
+                <div class="backend-skills">
+                    <!-- progress.js will populate -->
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <!-- Mobile Developer Section -->
+    <div class="category">
+        <details class="dropdown">
+            <summary>
+                <div class="summary-content">
+                    <div class="left-content">
+                        <p>
+                            <i class="icon fas fa-mobile-alt"></i>
+                            <span style="color: dodgerblue;">Mobile Development</span>
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-down summary-chevron"></i>
+                </div>
+            </summary>
+            <div class="dropdown-details">
+                <div class="mobile-skills">
+                    <!-- progress.js will populate -->
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <!-- Backend Developer Section -->
+    <div class="category">
+        <details class="dropdown">
+            <summary>
+                <div class="summary-content">
+                    <div class="left-content">
+                        <p>
+                            <i class="icon fas fa-chart-bar"></i>
+                            <span style="color: dodgerblue;">Data Analysis</span>
+                        </p>
+                    </div>
+                    <i class="fas fa-chevron-down summary-chevron"></i>
+                </div>
+            </summary>
+            <div class="dropdown-details">
+                <div class="data-skills">
+                    <!-- progress.js will populate -->
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <script src="src/JS/progress.js"></script>
+</div>
+
+<div class="journey section" id="journey">
+    <link rel="stylesheet" href="src/CSS/journey.css">
+    <h1 style="text-align:center;">MY JOURNEY</h1>
+    <div class="timeline-container">
+        <!-- items -->
+      
+    </div>
+    <script src="src/JS/journey.js"></script>
+    
+</div>
+
+<div class="projects section" id="projects">
+    <h1 style="text-align:center;">MY PROJECTS</h1>
+    <br>
+    <link rel="stylesheet" href="src/CSS/carousel.css">
+    <div class="carousel">
+        <div class="slides"></div>
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+    </div>
+    <script src="src/JS/carousel.js"></script>
+</div>
+
+
+<div class="tictactoe section" id="tictactoe">
+    <h1 style="padding-bottom: 2%">Tic Tac Toe</h1>
+    
+    <div class="mode-selection">
+        <button id = "player" onclick="setMode('player')" >Vs Player</button>
+        <button id = "computer" onclick="setMode('computer')" style="background-color: black;">Vs Computer</button>
+    </div>
+
+    <div class="difficulty-selection" id="difficultySelection" style="display: none;">
+        <button id="easybtn" onclick="setDifficulty('easy')">Easy</button>
+        <button id="mediumbtn" onclick="setDifficulty('medium')" style="background-color: black;">Medium</button>
+        <button id="hardbtn" onclick="setDifficulty('hard')" style="background-color: black;">Hard</button>
+    </div>
+
+
+    <div class="current-turn">
+        Current Turn: <span id="currentPlayer">X</span>
+    </div>
+
+
+    
+    <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <div style="padding-top: 2%;">
+    <button onclick="restartGame()">Restart Game</button>
+    </div>
+    <script src="src/JS/tictactoe.js"></script>
+</div>
+
+
+
+
+<div class="contact-container section" id="contact">
+    <link rel="stylesheet" href="src/CSS/contact.css">
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+        <form action="https://formspree.io/f/mldrnblj" method="POST">
+            <div class="group">
+                <input required="" type="text" class="input" id="inputName" name="name">
+                <label for="inputName">Name</label>
+            </div>
+            
+            <div class="group">
+                <input required="" type="text" class="input" id="inputEmail" name="email">
+                <label for="inputEmail">Email</label>
+                <span id="emailError" style="color:red;display:none;">Please enter a valid email address.</span>
+            </div>
+            
+            <div class="group">
+                <textarea required="" class="input" id="inputMessage" name="message" rows="10"></textarea>
+                <label for="inputMessage">Message</label>
+            </div>
+            
+            <button type="submit" class="btn-outline-primary">Send</button>
+        </form>
+    </div>
+    <script src="src/JS/contact.js"></script>
+</div>
+
+
+
+<div class="footer" id="footer">
+    <p>&copy; 2024</p>
+    <p>Developed by Neel Patel, hosted on <a href="https://pages.github.com/" target="_blank" style = "text-decoration:none;color:rgb(204, 209, 215);">GitHub Pages</a></p>
+</div>
+
+</body>
+</html>

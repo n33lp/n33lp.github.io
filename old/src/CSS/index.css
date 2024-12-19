@@ -1,0 +1,264 @@
+body {
+    color: rgb(204, 209, 215);
+    background-color: #000;
+    padding: 0; 
+    width: 70%;
+    margin: 0 auto; /* Centers the body horizontally */
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    font-size: 30px;
+    /* line-height: 1; */
+
+}
+
+.section {
+    padding-top: 10%;
+}
+
+
+#autoType {
+    font-size: 60px
+}
+
+.footer p {
+    font-size: 15px;
+}
+.footer{
+    padding-top: 50px;
+    text-align: center;
+
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Top navigation styling */
+.topnav {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0px 10px 0px;
+    color: white;
+    position: sticky;
+    top: 0; /* Stick the navigation bar to the top of the viewport */
+    width: 100%; /* Set the width to 100% */
+    overflow: hidden;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.topnav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.topnav a.active {
+    background-color: #6514d07e;
+    color: white;
+    border-radius: 40px; /* Rounded corners for the active link */
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* add 2 styles. 1 generic button and 2 button for connecting */
+button {
+    background-color: #6514d07e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    /* width: 100%; */
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+#aboutButton{
+    font-size: 30px;
+}
+
+
+.intro {
+    z-index: 1;
+    /* background-color: #4CAF50; */
+    margin: 0 auto;
+    height: 60vh;
+    align-items: center;
+    /* display: block; */
+    display: flex;
+    padding-top: 5%;
+
+}
+
+.about {
+    text-align: left;
+    line-height: 1.15;
+}
+  
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column img{
+    border-radius: 50%;
+    max-width: 80%;
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row{
+    align-items: center;
+    display: flex;
+}
+
+.particles {
+    position: absolute;
+    z-index: 0;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-85%);
+    width: 50%;
+    height: 40vh;
+    /* border: 3px solid #73AD21; */
+}
+
+/* Media query for tablets */
+@media (width <= 1000px) {
+    /* body {
+        width: 90%;
+    }
+
+    .topnav {
+        font-size: 18px; 
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .particles {
+        width: 80%; 
+        left: 50%;
+        transform: translateX(-50%); 
+    } */
+    body {
+        width: 100%; /* Full width on very small devices */
+    }
+    p {
+        font-size: 12px;
+        /* line-height: 1; */
+    
+    }
+    #autoType {
+        font-size: 27px
+    }
+
+    .topnav {
+        font-size: 13px; /* Further decrease font size for mobile */
+    }
+
+    .topnav a {
+        padding: 10px 8px; /* Adjust padding for smaller screens */
+    }
+
+    .footer p {
+        font-size: 8px; /* Decrease footer font size */
+    }
+
+    .intro {
+        padding-top: 10%; /* Increase padding at the top */
+        height: 50vh; /* Adjust height for mobile view */
+    }
+    
+    /* Adjust image size for mobile */
+    .column img {
+        max-width: 90%;
+    }
+    .particles {
+        /* background-color: aqua; */
+        /* position: absolute; */
+        /* z-index: 0; */
+        /* top: 20%; */
+        /* left: 50%; */
+        /* transform: translateX(-95%); */
+        /* width: 50%; */
+        /* height: 40vh; */
+        /* border: 3px solid #73AD21; */
+        display: none;
+    }
+    #aboutButton{
+        font-size: 12px;
+    }
+    
+}
+
+/* Media query for mobile devices */
+@media (width <=  480px) {
+    body {
+        width: 100%; /* Full width on very small devices */
+    }
+    p {
+        font-size: 12px;
+        /* line-height: 1; */
+    
+    }
+    #autoType {
+        font-size: 27px
+    }
+
+    .topnav {
+        font-size: 12px; /* Further decrease font size for mobile */
+    }
+
+    .topnav a {
+        padding: 8px 8px; /* Adjust padding for smaller screens */
+    }
+
+    .footer p {
+        font-size: 8px; /* Decrease footer font size */
+    }
+
+    .intro {
+        padding-top: 10%; /* Increase padding at the top */
+        height: 50vh; /* Adjust height for mobile view */
+    }
+    
+    /* Adjust image size for mobile */
+    .column img {
+        max-width: 90%;
+    }
+    .particles {
+        /* background-color: aqua; */
+        /* position: absolute; */
+        /* z-index: 0; */
+        /* top: 20%; */
+        /* left: 50%; */
+        /* transform: translateX(-95%); */
+        /* width: 50%; */
+        /* height: 40vh; */
+        /* border: 3px solid #73AD21; */
+        display: none;
+    }
+    #aboutButton{
+        font-size: 12px;
+    }
+    
+    /* Add other responsive adjustments as needed */
+}
