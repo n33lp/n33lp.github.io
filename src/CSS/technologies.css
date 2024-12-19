@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #822433; /* Dark maroon background */
+    background-color: rgb(40, 13, 14);
     border-radius: .5em; /* Rounded edges */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds subtle shadow */
     height: 2em;
@@ -25,7 +25,7 @@
 
 .technology-card-logo{
     margin: auto 0;
-    fill: blue; /* Change the fill color */
+    fill: rgb(232, 44, 53); /* Change the fill color */
     height: 1.5em;
 }
 
