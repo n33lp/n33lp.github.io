@@ -1,0 +1,68 @@
+.project {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding-bottom: 5%;
+}
+
+.project-card {
+    /* border: 1px solid coral; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    padding: 0.5em;
+    justify-content: space-between;
+    transition: transform 0.3s ease, background-color 0.3s ease;  /* Smooth transitions for transform and background color */
+    cursor: default;  /* Optional: Changes the cursor to a pointer to indicate interactivity */
+}
+
+.project-card:hover {
+    transform: scale(1.05);  /* Slightly increase the size of the card */
+    background-color: #3a3a3a;  /* Slightly lighten the background color on hover */
+}
+
+
+
+.project-card h1{
+    font-size: 1.5em;
+}
+.project-card p{
+    font-size: .75em;
+    margin-bottom: 1em;
+}
+.projectTags {
+    display: flex;
+    margin: 0.5em 0 .75em 0;
+    width: 90%;
+    scrollbar-color: #9f0e0e #bb2020; /* Optional: customizes the scrollbar color */
+    /* overflow:scroll; */
+}
+
+.project-tag {
+    background-color: #9f0e0e;
+    color: white;
+    border-radius: 1em;
+    font-size: .75em;
+    padding: 0 .6em;
+    margin: 0 .2em;
+}
+
+.project-card a{
+    align-items: bottom;
+}
+
+.project-tag p{
+    font-size: 1em;
+    margin: 0;
+}
+
+.project button{
+    min-height: none;
+    min-width: none;
+}
+
+
+
+

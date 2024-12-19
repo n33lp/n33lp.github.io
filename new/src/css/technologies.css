@@ -1,0 +1,63 @@
+.technologiesGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.8em;
+    width: 93%;
+    margin: auto;
+    padding: 2% 0 5% 0;
+}
+
+.technologies p{
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.technology-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #822433; /* Dark maroon background */
+    border-radius: .5em; /* Rounded edges */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds subtle shadow */
+    height: 2em;
+}
+
+.technology-card-logo{
+    margin: auto 0;
+    fill: blue; /* Change the fill color */
+    height: 1.5em;
+}
+
+.technology-card-logo:hover {
+    fill: red; /* Change color on hover */
+}
+
+.testing-technology-card-img{
+    display: flex;
+}
+
+.technology-card-img {
+    margin-left: .5rem;
+    display: flex;       /* Enables flexbox */
+    align-items: center; /* Vertically center the child elements */
+    justify-content: center; /* Horizontally center the child elements */
+     height: 100%;/*        Optional: you can set a specific height if needed */
+    /* height: 5em; */
+
+}
+
+
+.technology-card img {
+    width: 1.5em; /* Size of the icon */
+    height: auto;
+    
+    
+}
+
+.technology-card p {
+    margin: 0; 
+    padding-right: .5em;
+    font-size: 1em;
+    color: black;
+}
