@@ -108,3 +108,34 @@ button:hover {
     text-align: center;
 
 }
+
+
+
+/* Media query for tablets */
+@media (width <= 1000px) {
+   
+    
+}
+
+/* Media query for mobile devices */
+@media (width <=  480px) {
+    .intro {
+        flex-direction: column; /* Aligns children vertically */
+    }
+
+    .main{
+        width: 100%;
+    }
+
+    .intro-text{
+        max-width: 100%;
+        height: fit-content;
+        margin: auto 0;
+    }
+    .intro-img{
+        padding: 5% 0 0 0;
+        margin: 0 auto;
+        max-width: 95%;
+    }
+
+}

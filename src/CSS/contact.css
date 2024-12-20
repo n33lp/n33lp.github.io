@@ -122,3 +122,16 @@ label {
     margin: 0 auto;
     width: 75%;
 }
+
+
+/* Media query for tablets */
+@media (width <= 1000px) {
+   
+    
+}
+
+/* Media query for mobile devices */
+@media (width <=  480px) {
+    
+
+}

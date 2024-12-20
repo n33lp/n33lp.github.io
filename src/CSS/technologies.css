@@ -66,3 +66,21 @@
     font-size: 1em;
     color: rgb(232, 44, 53);
 }
+
+
+/* Media query for tablets */
+@media (width <= 1000px) {
+   
+    
+}
+
+/* Media query for mobile devices */
+@media (width <=  480px) {
+    .technologiesGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8em;
+        width: 93%;
+    }   
+
+}

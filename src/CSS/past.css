@@ -87,3 +87,30 @@ li{
 .publication{
     padding-top: 1em;
 }
+
+/* Media query for tablets */
+@media (width <= 1000px) {
+   
+    
+}
+
+/* Media query for mobile devices */
+@media (width <=  480px) {
+    .past {
+        display: flex;
+        flex-direction: column;
+    }
+    .past > div {
+        width: 100%; /* Each child takes up 47.5% of the `.past` width */
+    }   
+
+    .education{
+        padding-top: 1em;
+    }
+
+    .location-logo img {
+        width: 2em;        /* Specifies the width of the image */
+        height: 2em;       /* Specifies the height of the image - should match the width for a perfect circle */
+    }
+
+}
