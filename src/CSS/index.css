@@ -9,10 +9,52 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-.intro-text h1{
-    margin: .2em 0;
+.intro-text h1 {
+    margin: 0.2em 0;
     font-size: 3em;
+    color: #fff;
+    transition: transform 0.3s ease; /* Smooths the transition */
 }
+
+.intro-text h1:hover {
+    /* transform: translateY(-5px); Moves the text up by 5px on hover */
+}
+
+.wave span {
+    display: inline-block; /* Needed to apply transformations */
+    /* transform: translateY(20px); Start lower to move up */
+    transition: all 0.3s ease;
+}
+
+.wave:hover span {
+    opacity: 1;
+    transform: translateY(0);
+    animation: wave 0.8s ease forwards;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY();
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Applying incremental delays to create the wave effect */
+.wave span:nth-child(1) { animation-delay: 0s; }
+.wave span:nth-child(2) { animation-delay: 0.1s; }
+.wave span:nth-child(3) { animation-delay: 0.2s; }
+.wave span:nth-child(4) { animation-delay: 0.3s; }
+.wave span:nth-child(5) { animation-delay: 0.4s; }
+.wave span:nth-child(6) { animation-delay: 0.5s; }
+.wave span:nth-child(7) { animation-delay: 0.6s; }
+.wave span:nth-child(8) { animation-delay: 0.7s; }
+.wave span:nth-child(9) { animation-delay: 0.8s; }
+
 
 p{
     margin: 0;
