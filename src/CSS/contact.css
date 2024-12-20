@@ -144,6 +144,9 @@ label {
     #emailError{
         font-size: 0.60em;
     }
-    
+    .contact-container {
+        margin: 0 auto;
+        max-width: 93%;
+    }
 
 }
