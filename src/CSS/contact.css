@@ -123,6 +123,10 @@ label {
     width: 75%;
 }
 
+#emailError{
+    color:red;
+    display:none;
+}
 
 /* Media query for tablets */
 @media (width <= 1000px) {
@@ -132,6 +136,14 @@ label {
 
 /* Media query for mobile devices */
 @media (width <=  480px) {
+    .group {
+        position: relative;
+        margin-bottom: 1em;
+        width: 100%;
+    }    
+    #emailError{
+        font-size: 0.60em;
+    }
     
 
 }
